@@ -1,1 +1,37 @@
-/*# sourceMappingURL=buttonATC.css.map */
+.buttonATC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: none;
+  outline: 0;
+  color: black;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: medium;
+  line-height: 1;
+  cursor: pointer;
+}
+.buttonATC[data-theme=orange] {
+  background-color: var(--lego-orange);
+  border-color: var(--lego-orange);
+  color: black;
+}
+.buttonATC[data-theme=red] {
+  background-color: var(--lego-red);
+  border-color: var(--lego-red);
+  color: white;
+}
+.buttonATC:hover {
+  background-color: transparent;
+  color: black;
+}
+.buttonATC[data-size=small] {
+  padding: 0.875rem 1rem;
+}
+.buttonATC[data-size=large] {
+  padding: 1.25rem;
+}/*# sourceMappingURL=buttonATC.css.map */
