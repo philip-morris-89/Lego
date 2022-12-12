@@ -1,0 +1,63 @@
+.buttonAtc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: none;
+  outline: 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  padding: 1rem;
+}
+.buttonAtc:hover {
+  
+}
+
+.buttonAtc[data-color=neutral] {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+.buttonAtc[data-color=neutral]:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.buttonAtc[data-color=primary] {
+  color: black;
+  background-color: var(--lego-orange);
+  border-color: var(--lego-orange);
+}
+.buttonAtc[data-color=primary]:hover {
+  color: var(--lego-orange);
+  background-color: transparent;
+}
+
+.buttonAtc[data-color=secondary] {
+  color: white;
+  background-color: var(--lego-red);
+  border-color: var(--lego-red);
+}
+.buttonAtc[data-color=secondary]:hover {
+  color: var(--lego-red);
+  background-color: transparent;
+}
+
+.buttonAtc[data-size=small] {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.buttonAtc[data-size=medium] {
+  padding: 1rem;
+}
+
+.buttonAtc[data-size=large] {
+  padding: 1.25rem;
+}

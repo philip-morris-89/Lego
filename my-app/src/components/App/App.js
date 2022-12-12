@@ -1,17 +1,21 @@
-import { ButtonATC } from '../UI/Atoms/ButtonATC/ButtonATC';
-import Button from '@mui/material/Button';
+import AtomCard from "../Organisms/AtomCard/AtomCard"
+import AtomDisplay from "../Molecules/AtomDisplay/AtomDisplay"
 import './App.css';
 
 function App() {
   return (
     <div className='app'>
-      <h1>Hello, World!</h1>
-      <br/>
-      <br/>
-      <ButtonATC />
-      <br/>
-      <br/>
-      <Button variant="contained" size="large">Hello World</Button>
+      <AtomCard
+        title="Button Add to cart (Atc)"
+        description="The Button comes with three variants: primary, secondary, and neutral."
+        codesnippet="<ButtonAtc color='neutral' size='large'>"
+        codesnippet1="<ButtonAtc color='primary' size='large'>"
+        codesnippet2="<ButtonAtc color='secondary' size='large'>"
+      >
+        <AtomDisplay title="Neutral" component="ButtonAtc1"/>
+        <AtomDisplay title="Neutral" component="ButtonAtc2"/>
+        <AtomDisplay title="Neutral" component="ButtonAtc3"/>
+      </AtomCard>
     </div>
   );
 }

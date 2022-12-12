@@ -1,0 +1,13 @@
+.atomDisplay {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.atomDisplay h3 {
+  font-size: 0.75rem;
+  color: var(--blue-grey-900);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}

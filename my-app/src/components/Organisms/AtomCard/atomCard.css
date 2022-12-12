@@ -1,0 +1,48 @@
+.atomCard {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;  
+}
+
+.atomCard--header {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.atomCard--section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.atomCard--footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.atomCard--footer h6 {
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.atomCard--footer section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue-grey-50);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.atomCard--footer section p {
+  color: var(--blue-grey-500);
+  font-size: 0.875rem;
+  padding: 0.25rem 0;
+  font-family: monospace;
+  line-height: 1;
+}
