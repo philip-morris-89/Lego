@@ -1,13 +1,13 @@
-import ButtonAtc from "../../Atoms/ButtonAtc/ButtonAtc"
-import "./atomDisplay.css";
+import ButtonAtc from "../ButtonAtc/ButtonAtc"
+import "./uiCardItem.css";
 
-function AtomDisplay({
+function UiCardItem({
   title,
   component,
   children,
 }) {
   return (
-    <div className="atomDisplay">
+    <div className="uiCardItem">
       {title && <h3>{title}</h3>}
 
       {children}
@@ -19,4 +19,4 @@ function AtomDisplay({
   )
 }
 
-export default AtomDisplay
+export default UiCardItem

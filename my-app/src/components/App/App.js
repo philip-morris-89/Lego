@@ -1,21 +1,21 @@
-import AtomCard from "../Organisms/AtomCard/AtomCard"
-import AtomDisplay from "../Molecules/AtomDisplay/AtomDisplay"
+import UiCard from "../Ui/UiCard/UiCard";
+import UiCardItem from "../Ui/UiCardItem/UiCardItem";
 import './App.css';
 
 function App() {
   return (
     <div className='app'>
-      <AtomCard
+
+      <UiCard 
         title="Button Add to cart (Atc)"
         description="The Button comes with three variants: primary, secondary, and neutral."
-        codesnippet="<ButtonAtc color='neutral' size='large'>"
-        codesnippet1="<ButtonAtc color='primary' size='large'>"
-        codesnippet2="<ButtonAtc color='secondary' size='large'>"
+        codesnippet="<ButtonAtc color='primary' size='large'>"
+        codesnippet1="<ButtonAtc color='secondary' size='large'>"
       >
-        <AtomDisplay title="Neutral" component="ButtonAtc1"/>
-        <AtomDisplay title="Neutral" component="ButtonAtc2"/>
-        <AtomDisplay title="Neutral" component="ButtonAtc3"/>
-      </AtomCard>
+        <UiCardItem title="Primary" component="ButtonAtc2"></UiCardItem>
+        <UiCardItem title="Secondary" component="ButtonAtc3"></UiCardItem>
+      </UiCard>
+
     </div>
   );
 }

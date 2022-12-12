@@ -1,7 +1,7 @@
 import React from 'react'
-import './atomCard.css'
+import './uiCard.css'
 
-function AtomCard({
+function UiCard({
   title,
   description,
   codesnippet,
@@ -10,18 +10,18 @@ function AtomCard({
   children,
 }) {
   return (
-    <div className="atomCard">
+    <div className="uiCard">
 
-      { title && <header className="atomCard--header">
+      { title && <header className="uiCard--header">
         <h3>{title}</h3>
         <p>{description}</p>
       </header> }
 
-      <section className="atomCard--section">
+      <section className="uiCard--section">
         {children ? children : <div>Please use Atom Display Component</div>}
       </section>
 
-      { codesnippet && <footer className="atomCard--footer">
+      { codesnippet && <footer className="uiCard--footer">
         <h6>Code snippet:</h6>
         <section>
           <p>{codesnippet}</p>
@@ -33,4 +33,4 @@ function AtomCard({
   )
 }
 
-export default AtomCard
+export default UiCard

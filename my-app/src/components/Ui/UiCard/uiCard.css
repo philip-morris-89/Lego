@@ -1,16 +1,16 @@
-.atomCard {
+.uiCard {
   display: flex;
   flex-direction: column;
   padding: 0.5rem;  
 }
 
-.atomCard--header {
+.uiCard--header {
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
 }
 
-.atomCard--section {
+.uiCard--section {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -18,20 +18,20 @@
   margin: 2rem 0;
 }
 
-.atomCard--footer {
+.uiCard--footer {
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
 }
 
-.atomCard--footer h6 {
+.uiCard--footer h6 {
   font-size: 1rem;
   font-family: monospace;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.atomCard--footer section {
+.uiCard--footer section {
   display: flex;
   flex-direction: column;
   background-color: var(--blue-grey-50);
@@ -39,7 +39,7 @@
   border-radius: 0.5rem;
 }
 
-.atomCard--footer section p {
+.uiCard--footer section p {
   color: var(--blue-grey-500);
   font-size: 0.875rem;
   padding: 0.25rem 0;
