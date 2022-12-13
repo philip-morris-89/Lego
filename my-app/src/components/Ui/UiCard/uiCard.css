@@ -1,48 +1,73 @@
 .uiCard {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;  
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .uiCard--header {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.uiCard--header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.uiCard--header h3 span {
+  color: var(--green-500);
+}
+
+.uiCard--header p {
+  margin-top: 1rem;
+  color: var(--blue-grey-500);
 }
 
 .uiCard--section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   border: 1px solid black;
   padding: 2rem;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.uiCardItem {
+  padding: 1rem;
+  flex-grow: 1;
 }
 
 .uiCard--footer {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .uiCard--footer h6 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-family: monospace;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: var(--green-500);
 }
 
 .uiCard--footer section {
   display: flex;
   flex-direction: column;
   background-color: var(--blue-grey-50);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
 }
 
 .uiCard--footer section p {
   color: var(--blue-grey-500);
-  font-size: 0.875rem;
-  padding: 0.25rem 0;
+  font-size: 0.75rem;
+  padding: 0.5rem;
   font-family: monospace;
   line-height: 1;
 }

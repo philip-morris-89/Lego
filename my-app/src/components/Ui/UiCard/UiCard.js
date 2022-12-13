@@ -12,10 +12,10 @@ function UiCard({
   return (
     <div className="uiCard">
 
-      { title && <header className="uiCard--header">
+      <header className="uiCard--header">
         <h3>{title}</h3>
-        <p>{description}</p>
-      </header> }
+        { description && <p>{description}</p> }
+      </header>
 
       <section className="uiCard--section">
         {children ? children : <div>Please use Atom Display Component</div>}
@@ -23,7 +23,7 @@ function UiCard({
 
       { codesnippet && <footer className="uiCard--footer">
         <h6>Code snippet:</h6>
-        <section>
+        <section contenteditable="true">
           <p>{codesnippet}</p>
           {codesnippet1 && <p>{codesnippet1}</p>}
           {codesnippet2 && <p>{codesnippet2}</p>}

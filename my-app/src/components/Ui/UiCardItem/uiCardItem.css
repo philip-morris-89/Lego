@@ -1,10 +1,9 @@
 .uiCardItem {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
 
-.uiCardItem h3 {
+.uiCardItem h4 {
   font-size: 0.75rem;
   color: var(--blue-grey-900);
   font-weight: bold;

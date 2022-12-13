@@ -1,0 +1,126 @@
+.designSystemLibrary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: white;
+}
+
+.designSystemLibrary--aside {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  background-color: white;
+  padding: 1rem;
+  padding-top: 2rem;
+  overflow-y: auto;
+}
+.designSystemLibrary--aside header {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.designSystemLibrary--aside header svg {
+  max-width: 5rem;
+}
+.designSystemLibrary--aside header h5 {
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+.designSystemLibrary--aside header h6 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+.designSystemLibrary--aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: monospace;
+}
+.designSystemLibrary--aside ul > li {
+  padding: 1rem 0;
+}
+.designSystemLibrary--aside ul > li:nth-child(1) > a, .designSystemLibrary--aside ul > li:nth-child(1) ol li {
+  color: var(--pink-500);
+}
+.designSystemLibrary--aside ul > li:nth-child(2) > a, .designSystemLibrary--aside ul > li:nth-child(2) ol li {
+  color: var(--blue-500);
+}
+.designSystemLibrary--aside ul > li:nth-child(3) > a, .designSystemLibrary--aside ul > li:nth-child(3) ol li {
+  color: var(--green-500);
+}
+.designSystemLibrary--aside ul > li > a {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+.designSystemLibrary--aside ul a {
+  text-decoration: none;
+}
+.designSystemLibrary--aside ul a:hover {
+  text-decoration: underline;
+}
+.designSystemLibrary--aside ol {
+  display: flex;
+  flex-direction: column;
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+}
+.designSystemLibrary--aside ol li:first-child {
+  padding-top: 1rem;
+}
+.designSystemLibrary--aside ol li {
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+.designSystemLibrary--aside ol li a {
+  color: var(--blue-grey-500);
+  color: black;
+  font-weight: normal;
+}
+
+.designSystemLibrary--main {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.designSystemLibrary--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 2px solid black;
+  padding: 3rem 0;
+}
+
+.designSystemLibrary--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 940px;
+  padding: 0 4rem;
+}
+
+.designSystemLibrary--header {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.designSystemLibrary--header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.designSystemLibrary--header p {
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--blue-grey-900);
+  margin-top: 2rem;
+}/*# sourceMappingURL=designSystemLibrary.css.map */

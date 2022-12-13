@@ -10,13 +10,10 @@
   outline: 0;
   border-radius: 4px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1;
   cursor: pointer;
   padding: 1rem;
-}
-.buttonAtc:hover {
-  
 }
 
 .buttonAtc[data-color=neutral] {
