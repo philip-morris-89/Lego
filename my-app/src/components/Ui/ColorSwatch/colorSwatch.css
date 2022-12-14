@@ -1,0 +1,38 @@
+.colorSwatch {
+  display: flex;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.colorSwatch h5 {
+  line-height: 1;
+}
+.colorSwatch h6 {
+  text-transform: uppercase;
+  line-height: 1;
+}
+.colorSwatch[data-shape=row] {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.colorSwatch[data-shape=row] h5 {
+  padding-right: 0.5rem;
+}
+.colorSwatch[data-shape=row] h6 {
+  padding-left: 0.5rem;
+}
+.colorSwatch[data-shape=square] {
+  aspect-ratio: 1/1;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.colorSwatch[data-shape=square] h5 {
+  padding-bottom: 0.5rem;
+}
+.colorSwatch[data-contrast=light] {
+  color: white;
+}
+.colorSwatch[data-contrast=dark] {
+  color: black;
+}/*# sourceMappingURL=colorSwatch.css.map */

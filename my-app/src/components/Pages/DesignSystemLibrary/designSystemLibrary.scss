@@ -1,4 +1,7 @@
 $aside-width-size: 25%;
+$section-1-color: var(--pink-500);
+$section-2-color: var(--blue-500);
+$section-3-color: var(--green-500);
 
 .designSystemLibrary {
   display: flex;
@@ -25,6 +28,12 @@ $aside-width-size: 25%;
     flex-direction: column;
     padding: 1rem;
 
+    section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
     svg {
       max-width: 5rem;
     }
@@ -40,8 +49,9 @@ $aside-width-size: 25%;
     h6 {
       font-size: 1.25rem;
       font-weight: bold;
-      margin-top: 3rem;
+      margin-left: 2rem;
     }
+
   }// Header
 
   ul {
@@ -56,17 +66,17 @@ $aside-width-size: 25%;
 
     & > li:nth-child(1) > a,
     & > li:nth-child(1) ol li {
-      color: var(--pink-500);
+      color: $section-1-color;
     }
 
     & > li:nth-child(2) > a,
     & > li:nth-child(2) ol li {
-      color: var(--blue-500);
+      color: $section-2-color;
     }
 
     & > li:nth-child(3) > a,
     & > li:nth-child(3) ol li {
-      color: var(--green-500);
+      color: $section-3-color;
     }
 
     & > li > a {
@@ -118,8 +128,9 @@ $aside-width-size: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-left: 2px solid black;
+  border-left: 3px solid black;
   padding: 3rem 0;
+  position: relative;
 }
 
 .designSystemLibrary--container {
@@ -144,5 +155,21 @@ $aside-width-size: 25%;
     font-size: 1rem;
     color: var(--blue-grey-900);
     margin-top: 2rem;
+  }
+}
+
+.section--colors {
+  border-color: $section-1-color;
+  .designSystemLibrary--header h1,
+  .uiCard--footer h6 {
+    color: $section-1-color;
+  }
+}
+
+.section--buttons {
+  border-color: $section-2-color;
+  .designSystemLibrary--header h1,
+  .uiCard--footer h6 {
+    color: $section-2-color;
   }
 }

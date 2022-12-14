@@ -23,6 +23,11 @@
   flex-direction: column;
   padding: 1rem;
 }
+.designSystemLibrary--aside header section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .designSystemLibrary--aside header svg {
   max-width: 5rem;
 }
@@ -36,7 +41,7 @@
 .designSystemLibrary--aside header h6 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-top: 3rem;
+  margin-left: 2rem;
 }
 .designSystemLibrary--aside ul {
   display: flex;
@@ -97,8 +102,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-left: 2px solid black;
+  border-left: 3px solid black;
   padding: 3rem 0;
+  position: relative;
 }
 
 .designSystemLibrary--container {
@@ -123,4 +129,20 @@
   font-size: 1rem;
   color: var(--blue-grey-900);
   margin-top: 2rem;
+}
+
+.section--colors {
+  border-color: var(--pink-500);
+}
+.section--colors .designSystemLibrary--header h1,
+.section--colors .uiCard--footer h6 {
+  color: var(--pink-500);
+}
+
+.section--buttons {
+  border-color: var(--blue-500);
+}
+.section--buttons .designSystemLibrary--header h1,
+.section--buttons .uiCard--footer h6 {
+  color: var(--blue-500);
 }/*# sourceMappingURL=designSystemLibrary.css.map */
