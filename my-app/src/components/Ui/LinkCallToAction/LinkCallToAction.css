@@ -1,0 +1,72 @@
+.LinkCallToAction {
+  display: flex;
+  height: 25px;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border-collapse: collapse;
+  text-decoration: none;
+  text-transform: none;
+  padding: 10px 15px;
+  margin: 20px 10px 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.LinkCallToAction[data-type=radius] {
+  border-radius: 100px;
+}
+.LinkCallToAction[data-type=outline] {
+background-color: transparent;
+      color: black;
+      outline: 2px solid black;
+}
+.LinkCallToAction[data-type=outline]:hover {
+  text-decoration: underline;
+}
+.LinkCallToAction[data-color=neutral] {
+    color: black;
+    background-color: transparent;
+    border-color: black;
+}
+.LinkCallToAction[data-color=neutral]:hover {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+}
+.LinkCallToAction[data-color=primary] {
+  background-color: white;
+  color: black;
+}
+.LinkCallToAction[data-color=primary]:hover {
+  background-color: black;
+  color: white;
+}
+.LinkCallToAction[data-color=secondary] {
+  background-color: black;
+  color: white;
+}
+.LinkCallToAction[data-color=secondary]:hover {
+  background-color: white;
+  color: black;
+}
+
+.LinkCallToAction-arrow {
+  height: 16px;
+  width: 16px;
+  margin-left: 12px;
+}
+
+.LinkCallToAction[data-size=small] {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.LinkCallToAction[data-size=medium] {
+  padding: 1rem;
+}
+
+.LinkCallToAction[data-size=large] {
+  padding: 1.25rem;
+}
