@@ -1,7 +1,8 @@
 import "./LinkCallToAction.css"
 
-const COLORS = [ "neutral", "primary", "secondary" ]
+const COLORS = [ "neutral","primary", "secondary" ]
 const SIZES = [ "large", "medium", "small" ]
+const TYPES = ["solid", "outline", "pill"]
 
 function LinkCallToAction({
     text,
@@ -12,9 +13,10 @@ function LinkCallToAction({
 
     const COLOR = COLORS.includes(color) ? color : COLORS[0]
     const SIZE = SIZES.includes(size) ? size : SIZES[0]
+    const TYPE = TYPES.includes(type) ? type : TYPES[0]
 
     return(
-    <a href className={"LinkCallToAction"} data-color={COLOR} data-size={SIZE} data-type={type}>
+    <a href className={"LinkCallToAction"} data-color={COLOR} data-size={SIZE} data-type={TYPE}>
         {text}
         <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
             className="LinkCallToAction-arrow">

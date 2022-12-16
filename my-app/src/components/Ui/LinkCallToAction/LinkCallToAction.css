@@ -8,13 +8,11 @@
   border-collapse: collapse;
   text-decoration: none;
   text-transform: none;
-  padding: 10px 15px;
-  margin: 20px 10px 0 10px;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.LinkCallToAction[data-type=radius] {
+.LinkCallToAction[data-type=pill] {
   border-radius: 100px;
 }
 .LinkCallToAction[data-type=outline] {
@@ -22,9 +20,10 @@ background-color: transparent;
       color: black;
       outline: 2px solid black;
 }
-.LinkCallToAction[data-type=outline]:hover {
-  text-decoration: underline;
-}
+.LinkCallToAction[data-type=solid] {
+  background-color: black;
+  color: white;
+  }
 .LinkCallToAction[data-color=neutral] {
     color: black;
     background-color: transparent;
