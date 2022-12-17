@@ -36,6 +36,21 @@
   margin-bottom: 2rem;
 }
 
+.uiCard[data-color=indigo] .uiCard--section {
+  background-color: var(--lego-indigo);
+  border-color: var(--lego-indigo);
+}
+
+.uiCard[data-color=blue] .uiCard--section {
+  background-color: var(--lego-blue);
+  border-color: var(--lego-blue);
+}
+
+.uiCard[data-color=yellow] .uiCard--section {
+  background-color: var(--lego-yellow);
+  border-color: var(--lego-yellow);
+}
+
 .uiCardItem {
   padding: 1rem;
   flex-grow: 1;

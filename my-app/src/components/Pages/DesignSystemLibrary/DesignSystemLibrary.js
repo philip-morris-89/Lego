@@ -39,6 +39,9 @@ function DesignSystemLibrary() {
               <li>
                 <a href='#buttonAtc'>Button Add to cart (ATC)</a>
               </li>
+              <li>
+                <a href='#buttonCta'>Button Call to action (CTA)</a>
+              </li>
             </ol>
           </li>
         </ul>
@@ -137,6 +140,19 @@ function DesignSystemLibrary() {
               <UiCardItem title="Small" component="ButtonAtc3"></UiCardItem>
               <UiCardItem title="Medium" component="ButtonAtc4"></UiCardItem>
               <UiCardItem title="Large" component="ButtonAtc5"></UiCardItem>
+            </UiCard>
+
+            <hr id='buttonCta'/>
+
+            <UiCard 
+              title="Button CTA (Call to action)"
+              description="The button comes with two colors: Black and White."
+              codesnippet='<ButtonCta>Scopri di più</ButtonCta>'
+              codesnippet1='<ButtonCta color="white">Scopri di più</ButtonCta>'
+              color="yellow"
+            >
+              <UiCardItem title="Black (Default)" component="ButtonCta1"></UiCardItem>
+              <UiCardItem title="White" component="ButtonCta2"></UiCardItem>
             </UiCard>
           </div>
         </section>
