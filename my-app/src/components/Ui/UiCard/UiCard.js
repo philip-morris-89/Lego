@@ -8,9 +8,10 @@ function UiCard({
   codesnippet1,
   codesnippet2,
   children,
+  color,
 }) {
   return (
-    <div className="uiCard">
+    <div className="uiCard" data-color={color}>
 
       <header className="uiCard--header">
         <h3>{title}</h3>

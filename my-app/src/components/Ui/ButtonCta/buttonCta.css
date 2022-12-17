@@ -1,0 +1,87 @@
+.buttonCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttonCta svg {
+  width: auto;
+  height: 1rem;
+  margin-left: 0.75rem;
+}
+
+/* ------------------------------------ Button colors if data-style === Solid */
+.buttonCta[data-style=solid][data-color=black] {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+.buttonCta[data-style=solid][data-color=black]:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+.buttonCta[data-style=solid][data-color=white] {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+.buttonCta[data-style=solid][data-color=white]:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+/* ------------------------------------ Button colors if data-style === Outline */
+.buttonCta[data-style=outline][data-color=black] {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+.buttonCta[data-style=outline][data-color=black]:hover {
+  background-color: black;
+  color: white;
+}
+
+.buttonCta[data-style=outline][data-color=white] {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.buttonCta[data-style=outline][data-color=white]:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ------------------------------------ Shape */
+.buttonCta[data-shape=rectangle] {
+  border-radius: 0.25rem;
+}
+
+.buttonCta[data-shape=pill] {
+  border-radius: 10rem;
+}
+
+/* ------------------------------------ Sizes */
+.buttonCta[data-size=small] {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.buttonCta[data-size=medium] {
+  padding: 1rem;
+}
+
+.buttonCta[data-size=large] {
+  padding: 1.25rem;
+}/*# sourceMappingURL=buttonCta.css.map */
