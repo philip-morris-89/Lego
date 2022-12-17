@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/designsystemlibrary" element={<DesignSystemLibrary />} />
       </Routes>
-      <ProductCard/>
+      <ProductCard novità={true} sconto={32} titolo={"Prodotto di prova da App - Forza Napoli"} prezzo={79.99}/>
     </div>
   );
 }

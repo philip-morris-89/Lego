@@ -25,23 +25,22 @@
   .productCard-badge {
     display: flex;
     flex-direction: column;
-    padding: $size-8;
+    padding: 0.5rem;
     padding-right: 0;
-    @include body-200(medium);
     font-size: 12px;
 
     span, strong {
-      padding: $size-8;
+      padding: 0.5rem;
     }
 
     span {
-      background-color: var(--lego-yellow);
+      background-color: yellow;
       color: black;
       line-height: 1;
     }
 
     strong {
-      background-color: var(--red-500);
+      background-color: red;
       color: white;
       line-height: 1;
     }
@@ -59,7 +58,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  padding: $size-32;
+  padding: 0.5*4rem;
   z-index: 1;
   transition: all 0.5s ease-out;
 
@@ -78,15 +77,26 @@
   flex-grow: 1;
 }
 
+.productCard-content-price{
+  display: flex;
+  .productCard-price-old{
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+  
+  .productCard-price-new{
+    color: rgb(208, 2, 27);
+  }
+}
+
 .productCard-title {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   text-decoration: none;
   align-self: flex-start;
-  padding: $size-8 0;
+  padding: 0.5rem 0;
   color: black;
-  @include body-100(medium);
   &:hover {
     text-decoration: underline;
   }
@@ -96,29 +106,28 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  padding: $size-8 0;
+  padding: 0.5rem 0;
   width: 30%;
 }
 
 .productCard-price {
   display: flex;
   flex-direction: column;
-  @include subtitle-100(bold);
 }
 
 .productCard-button {
   display: flex;
   flex-direction: column;
-  margin-top: $size-16;
+  margin-top: 0.5*2rem;
 }
 
 [data-card=template1] {
   background-color: transparent;
   .productCard-content {
-    padding-top: $size-8;
+    padding-top: 0.5rem;
   }
   .productCard-display {
-    border: 1px solid var(--grey-300);
+    border: 1px solid grey;
   }
 }
 
@@ -126,23 +135,24 @@
   background-color: white;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25);
   .productCard-display {
-    border-bottom: 1px solid var(--grey-300);
+    border-bottom: 1px solid grey;
   }
   .productCard-content {
-    padding: $size-16;
+    padding: 0.5* 2rem;
   }
   .productCard-title {
     padding-top: 0;
   }
 }
 
-@media only screen and (min-width: $mobile-large) {
-  .productCard-imgContainer {
-    padding: $size-16;
-  }
-  .productCard-display:hover {
-    .productCard-imgContainer {
-      padding: 0;
-    }
-  }   
-}
+// @media only screen and (min-width: $mobile-large) {
+//   .productCard-imgContainer {
+//     padding: $size-16;
+//   }
+//   .productCard-display:hover {
+//     .productCard-imgContainer {
+//       padding: 0;
+//     }
+//   }   
+// }
+
