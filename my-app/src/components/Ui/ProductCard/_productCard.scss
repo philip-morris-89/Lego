@@ -60,8 +60,10 @@
   left: 0;
   padding: 0.5*4rem;
   z-index: 1;
-  transition: all 0.5s ease-out;
-
+  &:hover{
+    transition: all 0.5s ease-out;
+  }
+  
   img {
     width: auto;
     height: auto;
@@ -145,14 +147,14 @@
   }
 }
 
-// @media only screen and (min-width: $mobile-large) {
-//   .productCard-imgContainer {
-//     padding: $size-16;
-//   }
-//   .productCard-display:hover {
-//     .productCard-imgContainer {
-//       padding: 0;
-//     }
-//   }   
-// }
+@media only screen and (min-width: 480px) {
+  .productCard-imgContainer {
+    padding: 0.5*2rem;
+  }
+  .productCard-display:hover {
+    .productCard-imgContainer {
+      padding: 0;
+    }
+  }   
+}
 
