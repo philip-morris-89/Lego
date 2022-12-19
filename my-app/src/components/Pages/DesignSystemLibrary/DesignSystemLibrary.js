@@ -7,6 +7,7 @@ import ColorPaletteRed from '../../Ui/ColorPaletteRed/ColorPaletteRed'
 import ColorPaletteYellow from '../../Ui/ColorPaletteYellow/ColorPaletteYellow'
 import ColorSwatch from '../../Ui/ColorSwatch/ColorSwatch'
 import ProductCard from '../../Ui/ProductCard/ProductCard'
+import RatingStar from '../../Ui/RatingStar/RatingStar'
 import UiCard from "../../Ui/UiCard/UiCard"
 import UiCardItem from "../../Ui/UiCardItem/UiCardItem"
 import "./designSystemLibrary.css"
@@ -157,11 +158,19 @@ function DesignSystemLibrary() {
               title="Button CTA (Call to action)"
               description="The button comes with two colors: Black and White."
               codesnippet='<ButtonCta>Scopri di più</ButtonCta>'
-              codesnippet1='<ButtonCta color="white">Scopri di più</ButtonCta>'
+              codesnippet1='<ButtonCta color="black" theme="outline">Scopri di più</ButtonCta>'
+              codesnippet2='<ButtonCta color="white" shape="pill">'
               color="yellow"
             >
               <UiCardItem title="Black (Default)" component="ButtonCta1"></UiCardItem>
               <UiCardItem title="White" component="ButtonCta2"></UiCardItem>
+              <UiCardItem title="Black & Outline" component="ButtonCta3"></UiCardItem>
+              <UiCardItem title="Pill Black" component="ButtonCta4"></UiCardItem>
+              <UiCardItem title="Pill White" component="ButtonCta5"></UiCardItem>
+              <UiCardItem title="Pill & Outline" component="ButtonCta6"></UiCardItem>
+              <UiCardItem title="Small" component="ButtonCta7"></UiCardItem>
+              <UiCardItem title="Medium" component="ButtonCta8"></UiCardItem>
+              <UiCardItem title="Large" component="ButtonCta9"></UiCardItem>
             </UiCard>
           </div>
         </section>
@@ -202,6 +211,37 @@ function DesignSystemLibrary() {
                   template={"template2"}
                   linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"
                 />
+              </UiCardItem>
+            </UiCard>
+          </div>
+        </section>
+
+        <hr id='ratings'/>
+
+        <section className="designSystemLibrary--section section--ratings">
+          <div className="designSystemLibrary--container">
+            <header className="designSystemLibrary--header">
+              <h1>Ratings</h1>
+              <p>Components are interactive building blocks for creating a user interface.</p>
+            </header>
+
+            <hr id='productCard'/>
+
+            <UiCard 
+              title="Star Ratings"
+              description="Add description"
+              codesnippet='<RatingStar score={0} />'
+              codesnippet1='<RatingStar score={3} />'
+              codesnippet2='<RatingStar score={5} />'
+            >
+              <UiCardItem>
+                <RatingStar score={0} />
+              </UiCardItem>
+              <UiCardItem>
+                <RatingStar score={3} />
+              </UiCardItem>
+              <UiCardItem>
+                <RatingStar score={5} />
               </UiCardItem>
             </UiCard>
           </div>
