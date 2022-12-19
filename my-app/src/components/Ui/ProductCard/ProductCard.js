@@ -17,51 +17,48 @@ function ProductCard({
     onClick="",
 }) {
   return (
-    <div>
-      <div
-        className={"productCard"}
-        data-card={template}
-        data-skeleton={dataskeleton}
-      >
-        <div className={"productCard-display"}>
-          <div className={"productCard-badges"}>
-            {
-              (novità !== false && (
-                <div className={"productCard-badge"}>
-                  <span>Novità</span>
-                </div>
-              ))
-            }
-            {sconto > 0 && (
+    <div
+      className={"productCard"}
+      data-card={template}
+      data-skeleton={dataskeleton}
+    >
+      <div className={"productCard-display"}>
+        <div className={"productCard-badges"}>
+          {
+            (novità !== false && (
               <div className={"productCard-badge"}>
-                <strong>-{sconto}%</strong>
+                <span>Novità</span>
               </div>
-            )}
-          </div>
-          <a className={"productCard-imgContainer"} href={linkprodotto}>
-            <img src={linkimmagine} alt="Product image" />
-          </a>
-        </div>
-        <div className={"productCard-content"}>
-          <a href={linkprodotto} className={"productCard-title"}>
-            {titolo}
-          </a>
-          {sconto > 0 ? (
-            <div className={"productCard-content-price"}>
-                <h6 className={"productCard-price-old"}> €{prezzo} </h6>
-                <h6 className={"productCard-price-new"}>€{((prezzo * sconto / 100).toFixed(2))}</h6>
+            ))
+          }
+          {sconto > 0 && (
+            <div className={"productCard-badge"}>
+              <strong>-{sconto}%</strong>
             </div>
-          ) : (
-            <h6 className={"productCard-price"}>€{prezzo}</h6>
           )}
-
-          <div className={"productCard-button"}>
-            {/* <!-- Component Add to cart button --> */}
-            <ButtonAtc color="primary" size="medium" onClick={onClick}>Add to cart</ButtonAtc>
+        </div>
+        <a className={"productCard-imgContainer"} href={linkprodotto}>
+          <img src={linkimmagine} alt="Product" />
+        </a>
+      </div>
+      <div className={"productCard-content"}>
+        <a href={linkprodotto} className={"productCard-title"}>
+          {titolo}
+        </a>
+        {sconto > 0 ? (
+          <div className={"productCard-content-price"}>
+              <h6 className={"productCard-price-old"}> €{prezzo} </h6>
+              <h6 className={"productCard-price-new"}>€{((prezzo * sconto / 100).toFixed(2))}</h6>
           </div>
+        ) : (
+          <h6 className={"productCard-price"}>€{prezzo}</h6>
+        )}
+
+        <div className={"productCard-button"}>
+          {/* <!-- Component Add to cart button --> */}
+          <ButtonAtc color="primary" size="medium" onClick={onClick}>Add to cart</ButtonAtc>
         </div>
       </div>
-      {/* <!-- Product Card --> */}
     </div>
   );
 }

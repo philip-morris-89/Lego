@@ -173,3 +173,11 @@ $section-3-color: var(--green-500);
     color: $section-2-color;
   }
 }
+
+.section--cards {
+  border-color: $section-3-color;
+  .designSystemLibrary--header h1,
+  .uiCard--footer h6 {
+    color: $section-3-color;
+  }
+}

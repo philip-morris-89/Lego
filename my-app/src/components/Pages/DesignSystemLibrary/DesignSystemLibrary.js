@@ -6,6 +6,7 @@ import ColorPaletteOrange from '../../Ui/ColorPaletteOrange/ColorPaletteOrange'
 import ColorPaletteRed from '../../Ui/ColorPaletteRed/ColorPaletteRed'
 import ColorPaletteYellow from '../../Ui/ColorPaletteYellow/ColorPaletteYellow'
 import ColorSwatch from '../../Ui/ColorSwatch/ColorSwatch'
+import ProductCard from '../../Ui/ProductCard/ProductCard'
 import UiCard from "../../Ui/UiCard/UiCard"
 import UiCardItem from "../../Ui/UiCardItem/UiCardItem"
 import "./designSystemLibrary.css"
@@ -41,6 +42,14 @@ function DesignSystemLibrary() {
               </li>
               <li>
                 <a href='#buttonCta'>Button Call to action (CTA)</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href='#cards'>Cards</a>
+            <ol>
+              <li>
+                <a href='#productCard'>Product Card</a>
               </li>
             </ol>
           </li>
@@ -153,6 +162,47 @@ function DesignSystemLibrary() {
             >
               <UiCardItem title="Black (Default)" component="ButtonCta1"></UiCardItem>
               <UiCardItem title="White" component="ButtonCta2"></UiCardItem>
+            </UiCard>
+          </div>
+        </section>
+
+        <hr id='cards'/>
+
+        <section className="designSystemLibrary--section section--cards">
+          <div className="designSystemLibrary--container">
+            <header className="designSystemLibrary--header">
+              <h1>Cards</h1>
+              <p>Components are interactive building blocks for creating a user interface.</p>
+            </header>
+
+            <hr id='productCard'/>
+
+            <UiCard 
+              title="Product Card"
+              description="The product card comes with two variants: primary and secondary."
+              codesnippet='<ProductCard novità={true} sconto={40} titolo={"Prodotto di prova da App - Forza Napoli"} prezzo={79.99} template={"template1"} linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"/>'
+              codesnippet1='<ProductCard novità={true} sconto={40} titolo={"Prodotto di prova da App - Forza Napoli"} prezzo={79.99} template={"template2"} linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"/>'
+            >
+              <UiCardItem>
+                <ProductCard
+                  novità={true}
+                  sconto={40}
+                  titolo={"Prodotto di prova da App - Forza Napoli"}
+                  prezzo={79.99}
+                  template={"template1"}
+                  linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"
+                />
+              </UiCardItem>
+              <UiCardItem>
+                <ProductCard
+                  novità={true}
+                  sconto={40}
+                  titolo={"Prodotto di prova da App - Forza Napoli"}
+                  prezzo={79.99}
+                  template={"template2"}
+                  linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"
+                />
+              </UiCardItem>
             </UiCard>
           </div>
         </section>
