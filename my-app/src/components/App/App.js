@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import DesignSystemLibrary from "../Pages/DesignSystemLibrary/DesignSystemLibrary";
 import Home from "../Pages/Home/Home";
+import RatingStar from "../Ui/RatingStar/RatingStar"
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/designsystemlibrary" element={<DesignSystemLibrary />} />
       </Routes>
+      <RatingStar/>
     </div>
   );
 }
