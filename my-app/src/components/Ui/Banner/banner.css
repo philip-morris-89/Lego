@@ -1,0 +1,178 @@
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerMedia {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bannerPicture {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.bannerPicture-img {
+  width: 100%;
+  height: auto;
+}
+
+.bannerMedia-mark {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3rem;
+  width: auto;
+}
+
+.bannerContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.bannerContent img {
+  display: none;
+}
+
+.bannerContent h3 {
+  padding: 0.5rem 0;
+}
+
+.bannerContent p {
+  padding: 0.5rem 0;
+}
+
+.banner-btnGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.banner-btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0.5rem 0;
+}
+
+.banner[data-color=white] {
+  color: white;
+}
+
+.banner[data-color=black] {
+  color: black;
+}
+
+.banner[data-background=black] {
+  background-color: black;
+}
+
+.banner[data-background=purple] {
+  background-color: #130e2f;
+}
+
+.banner[data-background=blue] {
+  background-color: var(--blue-800);
+}
+
+.banner[data-background=halloween] {
+  background-color: #7a36bf;
+}
+
+.banner[data-background=xmas] {
+  background-color: #33a19d;
+}
+
+/* ================================================================ Responsive */
+@media only screen and (min-width: 426px) {
+  .banner [data-container] {
+    position: absolute;
+  }
+  .bannerContent {
+    width: 50%;
+    padding: 0;
+  }
+  .bannerContent img {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .banner-btnGroup {
+    flex-direction: row;
+  }
+  .banner[data-size=large] .bannerContent h3 {
+    font-size: 2.9vw;
+  }
+  .banner[data-size=large] .bannerContent p {
+    font-size: 1.6vw;
+  }
+  .banner[data-size=small] .bannerContent h3,
+.banner[data-size=small] .bannerContent p {
+    font-size: 1.8vw;
+    padding-bottom: 0;
+  }
+  .banner[data-position=left] .bannerMedia-mark {
+    right: 1rem;
+  }
+  .banner[data-position=left] [data-container] {
+    align-items: flex-start;
+  }
+  .banner[data-position=left] .bannerContent {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .banner[data-position=left] .banner-btnGroup {
+    justify-content: left;
+  }
+  .banner[data-position=left] .banner-btnContainer:first-child {
+    margin-right: 1rem;
+  }
+  .banner[data-position=right] .bannerMedia-mark {
+    right: inherit;
+    left: 1rem;
+  }
+  .banner[data-position=right] [data-container] {
+    align-items: flex-end;
+  }
+  .banner[data-position=right] .bannerContent {
+    text-align: right;
+    align-items: flex-end;
+  }
+  .banner[data-position=right] .banner-btnGroup {
+    justify-content: right;
+  }
+  .banner[data-position=right] .banner-btnContainer:last-child {
+    margin-left: 1rem;
+  }
+  .banner[data-position=center] .bannerMedia-mark {
+    right: 1rem;
+  }
+  .banner[data-position=center] [data-container] {
+    align-items: center;
+  }
+  .banner[data-position=center] .bannerContent {
+    text-align: center;
+    align-items: center;
+  }
+  .banner[data-position=center] .banner-btnGroup {
+    justify-content: center;
+  }
+  .banner[data-position=center] .banner-btnContainer {
+    margin: 0 0.5rem;
+  }
+}
