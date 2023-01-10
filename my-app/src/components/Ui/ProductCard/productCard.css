@@ -55,6 +55,8 @@
   left: 0;
   padding: 2rem;
   z-index: 1;
+}
+.productCard-imgContainer:hover {
   transition: all 0.5s ease-out;
 }
 .productCard-imgContainer img {
@@ -69,6 +71,10 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.productCard-starRating-box {
+  margin: 6px 0px 15px 0px;
 }
 
 .productCard-content-price {
@@ -136,6 +142,15 @@
 }
 [data-card=template2] .productCard-title {
   padding-top: 0;
+}
+
+@media only screen and (min-width: 480px) {
+  .productCard-imgContainer {
+    padding: 1rem;
+  }
+  .productCard-display:hover .productCard-imgContainer {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=productCard.css.map */
