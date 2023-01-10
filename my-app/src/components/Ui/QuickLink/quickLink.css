@@ -1,0 +1,53 @@
+/* =========================================================== Template 300 */
+
+li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  padding: 0.5;
+  text-align: center;
+}
+li img {
+  width: 100%;
+  height: auto;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+li a:hover {
+  text-decoration: underline;
+  color: var(--lego-blue);
+}
+li h6 {
+  padding: 0.5 0;
+}
+@media only screen and (min-width: 426px) {
+ 
+  li {
+    flex-basis: 20%;
+    width: 20%;
+    padding: 0.5 1rem;
+  }
+  li img {
+    margin-bottom: 1rem;
+  }
+  li h6 {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+ 
+  li {
+    flex-basis: 12.5%;
+    width: auto;
+    margin: 1rem;
+    padding: 0;
+  }
+  li:first-child {
+    margin-left: 0;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=quickLinks.css.map */
