@@ -370,10 +370,16 @@ function DesignSystemLibrary() {
               codesnippet2="<RatingStar score={5} />"
             >
               <UiCardItem>
-                <QuickLink />
+                <QuickLink
+                  linkImmagine="https://www.lego.com/cdn/cs/set/assets/blt985c185e9456faed/Generic-Site-Wave-1-Exclusive-202208-Quicklink.png?fit=crop&format=png&width=80&height=65&dpr=3"
+                  titolo="Set esclisivi"
+                />
               </UiCardItem>
               <UiCardItem>
-                <QuickLink />
+                <QuickLink
+                  linkImmagine="https://www.lego.com/cdn/cs/set/assets/blt000ef33faa9bca80/offers_Promos-Home-2021-Quicklink.png?fit=crop&format=png&width=80&height=65&dpr=3"
+                  titolo="Offerte"
+                />
               </UiCardItem>
               <UiCardItem>
                 <QuickLink />
