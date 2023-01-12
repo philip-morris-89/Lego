@@ -7,6 +7,7 @@ import ColorPaletteRed from "../../Ui/ColorPaletteRed/ColorPaletteRed";
 import ColorPaletteYellow from "../../Ui/ColorPaletteYellow/ColorPaletteYellow";
 import ColorSwatch from "../../Ui/ColorSwatch/ColorSwatch";
 import ProductCard from "../../Ui/ProductCard/ProductCard";
+import ArticleCard from "../../Ui/ArticleCard/ArticleCard";
 import RatingStar from "../../Ui/RatingStar/RatingStar";
 import UiCard from "../../Ui/UiCard/UiCard";
 import UiCardItem from "../../Ui/UiCardItem/UiCardItem";
@@ -292,6 +293,21 @@ function DesignSystemLibrary() {
                   template={"template2"}
                   linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"
                 />
+              </UiCardItem>
+            </UiCard>
+
+            <hr id="articleCard" />
+            <UiCard
+              title="Article Card"
+              description="The article card shows a preview of an article page"
+              codesnippet="Work in progress..."
+              codesnippet1="Work in progress..."
+            >
+              <UiCardItem>
+                <ArticleCard />
+              </UiCardItem>
+              <UiCardItem>
+                <ArticleCard />
               </UiCardItem>
             </UiCard>
           </div>
