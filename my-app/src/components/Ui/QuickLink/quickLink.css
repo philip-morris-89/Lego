@@ -21,11 +21,6 @@
   padding: 0.5rem 0;
 }
 @media only screen and (min-width: 426px) {
-  .quickLink {
-    flex-basis: 20%;
-    width: 20%;
-    padding: 0.5rem 1rem;
-  }
   .quickLink img {
     margin-bottom: 1rem;
   }
@@ -34,12 +29,6 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .quickLink {
-    flex-basis: 12.5%;
-    width: auto;
-    margin: 1rem;
-    padding: 0;
-  }
   .quickLink:first-child {
     margin-left: 0;
   }
