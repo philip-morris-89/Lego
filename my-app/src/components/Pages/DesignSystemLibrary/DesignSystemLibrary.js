@@ -12,6 +12,7 @@ import RatingStar from "../../Ui/RatingStar/RatingStar";
 import UiCard from "../../Ui/UiCard/UiCard";
 import UiCardItem from "../../Ui/UiCardItem/UiCardItem";
 import "./designSystemLibrary.css";
+import QuickLink from "../../Ui/QuickLink/QuickLink";
 
 function DesignSystemLibrary() {
   return (
@@ -342,6 +343,40 @@ function DesignSystemLibrary() {
               </UiCardItem>
               <UiCardItem>
                 <RatingStar score={5} />
+              </UiCardItem>
+            </UiCard>
+          </div>
+        </section>
+
+        <hr id="quickLinks" />
+
+        <section className="designSystemLibrary--section section--quicklinks">
+          <div className="designSystemLibrary--container">
+            <header className="designSystemLibrary--header">
+              <h1>Quick links</h1>
+              <p>
+                Components are interactive building blocks for creating a user
+                interface.
+              </p>
+            </header>
+
+            <hr id="quickLinks" />
+
+            <UiCard
+              title="Quick Links"
+              description="Add description"
+              codesnippet="<RatingStar score={0} />"
+              codesnippet1="<RatingStar score={3} />"
+              codesnippet2="<RatingStar score={5} />"
+            >
+              <UiCardItem>
+                <QuickLink />
+              </UiCardItem>
+              <UiCardItem>
+                <QuickLink />
+              </UiCardItem>
+              <UiCardItem>
+                <QuickLink />
               </UiCardItem>
             </UiCard>
           </div>
