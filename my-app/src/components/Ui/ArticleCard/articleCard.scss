@@ -1,62 +1,62 @@
 .articleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .articleCard-imgContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-  
-    .articleCard-imgContainer {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      margin-bottom: 16px;
-      .articleCard-img {
-        width: 100%;
-        height: auto;
-      } 
-    }
-  
-    &[data-position=left] .articleCard-imgContainer {
-      align-items: flex-start;
-    }
-    &[data-position=right] .articleCard-imgContainer {
-      align-items: flex-end;
-    }
-  
-    .articleCard-logoContainer {
-      position: absolute;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      height: 25%;
-      z-index: 1;
-      padding: 8px;
-      img {
-        max-width: 100px;
-        max-height: 100%;
-      }
-    }
-  /* 
-    h3 {
-      @include subtitle-100(medium);
-      color: black;
-      margin: $size-8 0;
-    }
-   */
-  /*   p {
-      @include body-100(regular);
-      color: black;
-      margin: $size-8 0;
-    }
-   */
-    .buttonPrimary {
-      margin-top: 16px;
+    justify-content: end;
+    margin-bottom: 1rem;
+    .articleCard-img {
+      width: 100%;
+      height: auto;
     }
   }
-  
-/*   @media only screen and (min-width: $tablet) {
-    .articleCard .articleCard-logoContainer {
-      height: 25%;
+
+  &[data-position="left"] .articleCard-imgContainer {
+    align-items: flex-start;
+  }
+  &[data-position="right"] .articleCard-imgContainer {
+    align-items: flex-end;
+  }
+
+  .articleCard-logoContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    z-index: 1;
+    padding: 0.5rem;
+    img {
+      max-width: 100px;
+      max-height: 100%;
     }
-  } */
+  }
+
+  h3 {
+    // @include subtitle-100(medium);
+    color: black;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    // @include body-100(regular);
+    color: black;
+    margin: 0.5rem 0;
+  }
+
+  .buttonPrimary {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .articleCard .articleCard-logoContainer {
+    height: 25%;
+  }
+}
