@@ -20,7 +20,7 @@
 }
 
 /* ------------------------------------ Button colors if data-style === Solid */
-.buttonCta[data-style=solid][data-color=black] {
+.buttonCta[data-style="solid"][data-color="black"] {
   background-color: black;
   border-color: black;
   color: white;
@@ -31,7 +31,7 @@
   }
 }
 
-.buttonCta[data-style=solid][data-color=white] {
+.buttonCta[data-style="solid"][data-color="white"] {
   background-color: white;
   border-color: white;
   color: black;
@@ -43,7 +43,7 @@
 }
 
 /* ------------------------------------ Button colors if data-style === Outline */
-.buttonCta[data-style=outline][data-color=black] {
+.buttonCta[data-style="outline"][data-color="black"] {
   background-color: transparent;
   color: black;
   border-color: black;
@@ -53,7 +53,7 @@
   }
 }
 
-.buttonCta[data-style=outline][data-color=white] {
+.buttonCta[data-style="outline"][data-color="white"] {
   background-color: transparent;
   border-color: white;
   color: white;
@@ -64,25 +64,36 @@
 }
 
 /* ------------------------------------ Shape */
-.buttonCta[data-shape=rectangle] {
+.buttonCta[data-shape="rectangle"] {
   border-radius: 0.25rem;
 }
 
-.buttonCta[data-shape=pill] {
+.buttonCta[data-shape="pill"] {
   border-radius: 10rem;
 }
 
-
 /* ------------------------------------ Sizes */
-.buttonCta[data-size=small] {
+.buttonCta[data-size="small"] {
   padding: 0.75rem;
   font-size: 0.875rem;
 }
 
-.buttonCta[data-size=medium] {
+.buttonCta[data-size="medium"] {
   padding: 1rem;
 }
 
-.buttonCta[data-size=large] {
+.buttonCta[data-size="large"] {
   padding: 1.25rem;
+}
+
+.buttonCta[data-style="none"] {
+  background-color: transparent;
+  color: black;
+  border: none;
+  &:hover {
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-decoration: underline;
+  }
 }

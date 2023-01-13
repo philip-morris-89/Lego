@@ -29,7 +29,8 @@
     padding-right: 0;
     font-size: 12px;
 
-    span, strong {
+    span,
+    strong {
       padding: 0.5rem;
     }
 
@@ -45,7 +46,6 @@
       line-height: 1;
     }
   }
-
 }
 
 .productCard-imgContainer {
@@ -58,12 +58,10 @@
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0.5*4rem;
+  padding: 2rem;
   z-index: 1;
-  &:hover{
-    transition: all 0.5s ease-out;
-  }
-  
+  transition: all 0.5s ease-out;
+
   img {
     width: auto;
     height: auto;
@@ -79,19 +77,18 @@
   flex-grow: 1;
 }
 
-.productCard-starRating-box{
-  margin: 6px 0px 15px 0px;
-   
+.productCard-starRating-box {
+  margin-bottom: 0.5rem;
 }
 
-.productCard-content-price{
+.productCard-content-price {
   display: flex;
-  .productCard-price-old{
+  .productCard-price-old {
     text-decoration: line-through;
     margin-right: 10px;
   }
-  
-  .productCard-price-new{
+
+  .productCard-price-new {
     color: rgb(208, 2, 27);
   }
 }
@@ -104,12 +101,13 @@
   align-self: flex-start;
   padding: 0.5rem 0;
   color: black;
+  font-weight: 600;
   &:hover {
     text-decoration: underline;
   }
 }
 
-.productCard-ratings{
+.productCard-ratings {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -122,13 +120,18 @@
   flex-direction: column;
 }
 
+.productCard-price,
+.productCard-content-price {
+  font-weight: 500;
+}
+
 .productCard-button {
   display: flex;
   flex-direction: column;
-  margin-top: 0.5*2rem;
+  margin-top: 1rem;
 }
 
-[data-card=template1] {
+[data-card="template1"] {
   background-color: transparent;
   .productCard-content {
     padding-top: 0.5rem;
@@ -138,14 +141,14 @@
   }
 }
 
-[data-card=template2] {
+[data-card="template2"] {
   background-color: white;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
   .productCard-display {
     border-bottom: 1px solid grey;
   }
   .productCard-content {
-    padding: 0.5* 2rem;
+    padding: 1rem;
   }
   .productCard-title {
     padding-top: 0;
@@ -154,12 +157,11 @@
 
 @media only screen and (min-width: 480px) {
   .productCard-imgContainer {
-    padding: 0.5*2rem;
+    padding: 1rem;
   }
   .productCard-display:hover {
     .productCard-imgContainer {
       padding: 0;
     }
-  }   
+  }
 }
-
