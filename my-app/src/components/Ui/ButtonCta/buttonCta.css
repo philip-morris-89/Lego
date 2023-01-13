@@ -84,4 +84,16 @@
 
 .buttonCta[data-size=large] {
   padding: 1.25rem;
+}
+
+.buttonCta[data-style=none] {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+.buttonCta[data-style=none]:hover {
+  background-color: transparent;
+  color: black;
+  border: none;
+  text-decoration: underline;
 }/*# sourceMappingURL=buttonCta.css.map */

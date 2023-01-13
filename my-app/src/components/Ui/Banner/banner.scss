@@ -1,171 +1,186 @@
 .banner {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .bannerMedia {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .bannerPicture {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-  
-  .bannerPicture-img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .bannerMedia-mark {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerMedia {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bannerPicture {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.bannerPicture-img {
+  width: 100%;
+  height: auto;
+}
+
+.bannerMedia-mark {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3rem;
+  width: auto;
+}
+
+.bannerContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.bannerContent img {
+  display: none;
+}
+
+.bannerContent h3 {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.bannerContent p {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.banner-btnGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.banner-btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0.5rem 0;
+}
+
+.banner[data-color="white"] {
+  color: white;
+}
+.banner[data-color="black"] {
+  color: black;
+}
+
+.banner[data-background="black"] {
+  background-color: black;
+}
+.banner[data-background="purple"] {
+  background-color: #130e2f;
+}
+.banner[data-background="blue"] {
+  background-color: var(--blue-800);
+}
+.banner[data-background="halloween"] {
+  background-color: #7a36bf;
+}
+.banner[data-background="xmas"] {
+  background-color: #33a19d;
+}
+
+/* ================================================================ Responsive */
+@media only screen and (min-width: 426px) {
+  .banner [data-container] {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    height: 3rem;
-    width: auto; 
   }
-  
   .bannerContent {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
+    width: 50%;
+    padding: 0;
   }
-  
   .bannerContent img {
-    display: none;
-  }
-  
-  .bannerContent h3 {
-    //@include subtitle-100(regular);
-    padding: 0.5rem 0;
-  }
-  
-  .bannerContent p {
-    //@include body-200(regular);
-    padding: 0.5rem 0;
-  }
-  
-  .banner-btnGroup {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem 0;
+    width: auto;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
-  
-  .banner-btnContainer {
-    display: flex;
+  .banner-btnGroup {
     flex-direction: row;
-    justify-content: center;
-    flex-shrink: 0;
-    padding: 0.5rem 0;
   }
-  
-  .banner[data-color=white] { color: white; }
-  .banner[data-color=black] { color: black; }
-  
-  .banner[data-background=black]    { background-color: black; }
-  .banner[data-background=purple]   { background-color: #130e2f; }
-  .banner[data-background=blue]     { background-color: var(--blue-800); }
-  .banner[data-background=halloween]  { background-color: #7a36bf; }
-  .banner[data-background=xmas]       { background-color: #33a19d; }
-  
-  /* ================================================================ Responsive */
-  @media only screen and (min-width: 426px) {
-    .banner [data-container] {
-      position: absolute;
+  .banner[data-size="large"] {
+    .bannerContent h3 {
+      font-size: 2.9vw;
+    }
+    .bannerContent p {
+      font-size: 1.6vw;
+    }
+  }
+  .banner[data-size="small"] {
+    .bannerContent h3,
+    .bannerContent p {
+      font-size: 1.8vw;
+      padding-bottom: 0;
+    }
+  }
+  .banner[data-position="left"] {
+    .bannerMedia-mark {
+      right: 1rem;
+    }
+    [data-container] {
+      align-items: flex-start;
     }
     .bannerContent {
-      width: 50%;
-      padding: 0;
-    }
-    .bannerContent img {
-      display: flex;
-      flex-direction: column;
-      width: auto;
-      height: 2rem;
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
+      text-align: left;
+      align-items: flex-start;
     }
     .banner-btnGroup {
-      flex-direction: row;
+      justify-content: left;
     }
-    .banner[data-size=large] {
-      .bannerContent h3 {
-        font-size: 2.9vw;
-      }
-      .bannerContent p {
-        font-size: 1.6vw;
-      }
-    }
-    .banner[data-size=small] {
-      .bannerContent h3,
-      .bannerContent p {
-        font-size: 1.8vw;
-        padding-bottom: 0;
-      }
-    }
-    .banner[data-position=left] {
-      .bannerMedia-mark {
-        right: 1rem;
-      }
-      [data-container] {
-        align-items: flex-start;
-      }
-      .bannerContent {
-        text-align: left;
-        align-items: flex-start;
-      }
-      .banner-btnGroup {
-        justify-content: left;
-      }
-      .banner-btnContainer:first-child {
-        margin-right: 1rem;
-      }
-    }
-    .banner[data-position=right] {
-      .bannerMedia-mark {
-        right: inherit;
-        left: 1rem;
-      }
-      [data-container] {
-        align-items: flex-end;
-      }
-      .bannerContent {
-        text-align: right;
-        align-items: flex-end;
-      }
-      .banner-btnGroup {
-        justify-content: right;
-      }
-      .banner-btnContainer:last-child {
-        margin-left: 1rem;
-      }
-    }
-    .banner[data-position=center] {
-      .bannerMedia-mark {
-        right: 1rem;
-      }
-      [data-container] {
-        align-items: center;
-      }
-      .bannerContent {
-        text-align: center;
-        align-items: center;
-      }
-      .banner-btnGroup {
-        justify-content: center;
-      }
-      .banner-btnContainer {
-        margin: 0 0.5rem;
-      }
+    .banner-btnContainer:first-child {
+      margin-right: 1rem;
     }
   }
+  .banner[data-position="right"] {
+    .bannerMedia-mark {
+      right: inherit;
+      left: 1rem;
+    }
+    [data-container] {
+      align-items: flex-end;
+    }
+    .bannerContent {
+      text-align: right;
+      align-items: flex-end;
+    }
+    .banner-btnGroup {
+      justify-content: right;
+    }
+    .banner-btnContainer:last-child {
+      margin-left: 1rem;
+    }
+  }
+  .banner[data-position="center"] {
+    .bannerMedia-mark {
+      right: 1rem;
+    }
+    [data-container] {
+      align-items: center;
+    }
+    .bannerContent {
+      text-align: center;
+      align-items: center;
+    }
+    .banner-btnGroup {
+      justify-content: center;
+    }
+    .banner-btnContainer {
+      margin: 0 0.5rem;
+    }
+  }
+}

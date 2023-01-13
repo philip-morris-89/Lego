@@ -8,7 +8,8 @@ function ArticleCard({
   logo2 = "https://www.lego.com/cdn/cs/set/assets/blt4fb1c3a4e8917247/wizardingWorld_logo_gold_300w.png?format=png&height=60&dpr=2",
   title = "Article card title",
   description = "Article card description goes here to describe a snipet of the article content",
-  link = "Scopri di più",
+  linktitle = "Scopri di più",
+  link = "./",
 }) {
   return (
     <div className="articleCard" data-position="right">
@@ -21,8 +22,8 @@ function ArticleCard({
       </a>
       <h3>{title}</h3>
       <p>{description}</p>
-      <ButtonCta color="white" size="small">
-        {link}
+      <ButtonCta size="small" theme="none" link={link}>
+        {linktitle}
       </ButtonCta>
     </div>
   );

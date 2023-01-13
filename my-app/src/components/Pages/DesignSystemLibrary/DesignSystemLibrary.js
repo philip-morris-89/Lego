@@ -271,14 +271,14 @@ function DesignSystemLibrary() {
             <UiCard
               title="Product Card"
               description="The product card comes with two variants: primary and secondary."
-              codesnippet='<ProductCard novità={true} sconto={40} titolo={"Prodotto di prova da App - Forza Napoli"} prezzo={79.99} template={"template1"} linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"/>'
-              codesnippet1='<ProductCard novità={true} sconto={40} titolo={"Prodotto di prova da App - Forza Napoli"} prezzo={79.99} template={"template2"} linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"/>'
+              codesnippet='<ProductCard rating={4} novità={true} sconto={40} titolo={"Prodotto di prova"} prezzo={79.99} template={"template1"} linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"/>'
+              codesnippet1='<ProductCard rating={3} novità={false} sconto={0} titolo={"Prodotto di prova"} prezzo={79.99} template={"template2"} linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"/>'
             >
               <UiCardItem>
                 <ProductCard
                   novità={true}
                   sconto={40}
-                  titolo={"Prodotto di prova da App - Forza Napoli"}
+                  titolo={"Prodotto di prova"}
                   prezzo={79.99}
                   rating={4}
                   template={"template1"}
@@ -287,10 +287,11 @@ function DesignSystemLibrary() {
               </UiCardItem>
               <UiCardItem>
                 <ProductCard
-                  novità={true}
-                  sconto={40}
-                  titolo={"Prodotto di prova da App - Forza Napoli"}
+                  novità={false}
+                  sconto={0}
+                  titolo={"Prodotto di prova"}
                   prezzo={79.99}
+                  rating={3}
                   template={"template2"}
                   linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"
                 />
@@ -301,8 +302,7 @@ function DesignSystemLibrary() {
             <UiCard
               title="Article Card"
               description="The article card shows a preview of an article page"
-              codesnippet="Work in progress..."
-              codesnippet1="Work in progress..."
+              codesnippet="<ArticleCard image='url' logo1='url' logo2='url' title='Titolo' description='Description' link='url' linktitle='scopri di più' />"
             >
               <UiCardItem>
                 <ArticleCard />
@@ -365,9 +365,7 @@ function DesignSystemLibrary() {
             <UiCard
               title="Quick Links"
               description="Add description"
-              codesnippet="<RatingStar score={0} />"
-              codesnippet1="<RatingStar score={3} />"
-              codesnippet2="<RatingStar score={5} />"
+              codesnippet="<QuickLink linkImmagine='url' titolo='Title' link='url'>"
             >
               <UiCardItem>
                 <QuickLink
