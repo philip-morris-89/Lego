@@ -39,6 +39,9 @@ function Banners() {
         btnLink1="./"
         btnColor="black"
       />
+
+      {/* HOME BOTTOM */}
+
       <Banner
         size="large"
         textcolor="black"
@@ -49,6 +52,23 @@ function Banners() {
         imgMobile="https://www.lego.com/cdn/cs/set/assets/blt3fb3a7afdd5a6061/Grey-Email-Signup-Hero-Mobile.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2"
         imgTablet="https://www.lego.com/cdn/cs/set/assets/blteaf8164c0008b6ba/Grey-Email-Signup-Hero-Medium-1.jpg?fit=crop&format=webply&quality=80&width=900&height=350&dpr=3"
         imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt8c7ec696474ed641/Grey-Email-Signup-Hero-Standard-1.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
+        btnText1="Compra Ora"
+        btnLink1="./"
+        btnColor="black"
+      />
+
+      {/* XMAS TOP */}
+
+        <Banner
+        size="large"
+        textcolor="black"
+        backgroundcolor="xmas"
+        position="left"
+        title="Costruisci lo spirito natalizio"
+        paragraph="Diffondi lo spirito natalizio con il nuovo set Natale nella strada principale LEGO®."
+        imgMobile="https://www.lego.com/cdn/cs/set/assets/blt74a0a7ae0c32055e/Holiday-Landing-202212-10308-Hero-Standard-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2"
+        imgTablet="https://www.lego.com/cdn/cs/set/assets/blt133fbb81fb18da99/Holiday-Landing-202212-10308-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3"
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/bltf6665af9c7337230/Holiday-Landing-202212-10308-Hero-Standard-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
         btnText1="Compra Ora"
         btnLink1="./"
         btnColor="black"
