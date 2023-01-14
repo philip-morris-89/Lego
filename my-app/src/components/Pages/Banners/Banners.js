@@ -22,6 +22,23 @@ function Banners() {
         btnLink2="./"
         btnColor="white"
       />
+
+      {/* HOME TOP */}
+
+      <Banner
+        size="large"
+        textcolor="black"
+        backgroundcolor="orange"
+        position="right"
+        title="Inizia qualcosa di nuovo"
+        paragraph="Che tu voglia scoprire cosa desideri davvero nella vita o imparare a praticare la gentilezza, questi nuovi set LEGO® sono pronti all'azione."
+        imgMobile="https://www.lego.com/cdn/cs/set/assets/blt52bb639fa70f0714/1812-Novelty-Homepage-202301-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
+        imgTablet="https://www.lego.com/cdn/cs/set/assets/blt6206e920f291a8a1/1812-Novelty-Homepage-202301-Hero-Standard-Medium.jpg?fit=crop&format=webply&quality=80&width=900&height=351&dpr=3"
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blta9f91fcf1dfd9551/1812-Novelty-Homepage-202301-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3"
+        btnText1="Compra Ora"
+        btnLink1="./"
+        btnColor="black"
+      />
     </div>
   );
 }

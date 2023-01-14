@@ -4,7 +4,7 @@ import ButtonCta from "../ButtonCta/ButtonCta";
 
 const SIZES = ["large", "small"];
 const TEXTCOLORS = ["white", "black"];
-const BACKGROUNDCOLORS = ["black", "purple", "blue", "halloween", "xmas"];
+const BACKGROUNDCOLORS = ["black", "purple", "blue", "orange", "halloween", "xmas"];
 const POSITIONS = ["left", "center", "right"];
 
 function Banner({
