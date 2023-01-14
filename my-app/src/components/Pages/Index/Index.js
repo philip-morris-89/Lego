@@ -17,6 +17,9 @@ function Index() {
         <li>
           <Link to="/banners">Banners</Link>
         </li>
+        <li>
+          <Link to="/headers">Headers</Link>
+        </li>
       </ul>
     </div>
   );

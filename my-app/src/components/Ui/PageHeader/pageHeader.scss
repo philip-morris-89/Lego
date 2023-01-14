@@ -1,0 +1,122 @@
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+
+  &[data-position="left"] [data-container] {
+    align-items: flex-start;
+    text-align: left;
+    ul li {
+      padding-right: 1rem;
+    }
+  }
+
+  &[data-position="center"] [data-container] {
+    align-items: center;
+    text-align: center;
+    ul li {
+      padding: 0 0.5rem;
+    }
+  }
+
+  &[data-position="right"] [data-container] {
+    align-items: flex-end;
+    text-align: right;
+    ul li {
+      padding-left: 1rem;
+    }
+  }
+
+  h2 {
+    color: black;
+  }
+
+  &[data-size="small"] {
+    h2 {
+      font-weight: normal;
+      line-height: 1.2;
+      font-size: 1.25rem;
+    }
+  }
+
+  &[data-size="large"] {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: medium;
+      line-height: 1.2;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  @media only screen and (min-width: 426px) {
+    padding-top: 4rem;
+    padding-right: 0;
+    padding-bottom: 3rem;
+    padding-left: 0;
+
+    &[data-position="left"] [data-container],
+    &[data-position="right"] [data-container],
+    &[data-position="center"] [data-container] {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &[data-position="left"] [data-container] {
+      justify-content: left;
+      h2 {
+        flex-grow: 1;
+      }
+      ul li {
+        padding-right: 0;
+        padding-left: 1rem;
+      }
+    }
+
+    &[data-position="right"] [data-container] {
+      justify-content: right;
+      flex-direction: row-reverse;
+      h2 {
+        flex-grow: 1;
+      }
+      ul li {
+        padding-right: 1rem;
+        padding-left: 0;
+      }
+    }
+
+    &[data-position="center"] [data-container] {
+      justify-content: center;
+      h2 {
+        padding: 0 0.5rem;
+      }
+    }
+
+    &[data-size="small"] {
+      h2 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        line-height: 1;
+      }
+    }
+
+    &[data-size="large"] {
+      h2 {
+        font-size: 2rem;
+        font-weight: medium;
+        line-height: 1;
+      }
+    }
+
+    ul {
+      margin-top: 0;
+    }
+  }
+}
