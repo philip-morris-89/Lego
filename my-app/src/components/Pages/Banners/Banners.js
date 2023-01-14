@@ -39,6 +39,20 @@ function Banners() {
         btnLink1="./"
         btnColor="black"
       />
+      <Banner
+        size="large"
+        textcolor="black"
+        backgroundcolor="gray"
+        position="left"
+        title="Restiamo in contatto"
+        paragraph="Iscriviti per ricevere le comunicazioni di marketing LEGO® e scoprire per primo i nuovi set, gli aggiornamenti sui prodotti, le promozioni e molto altro"
+        imgMobile="https://www.lego.com/cdn/cs/set/assets/blt3fb3a7afdd5a6061/Grey-Email-Signup-Hero-Mobile.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2"
+        imgTablet="https://www.lego.com/cdn/cs/set/assets/blteaf8164c0008b6ba/Grey-Email-Signup-Hero-Medium-1.jpg?fit=crop&format=webply&quality=80&width=900&height=350&dpr=3"
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt8c7ec696474ed641/Grey-Email-Signup-Hero-Standard-1.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
+        btnText1="Compra Ora"
+        btnLink1="./"
+        btnColor="black"
+      />
     </div>
   );
 }

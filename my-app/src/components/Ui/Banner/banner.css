@@ -92,7 +92,9 @@
 .banner[data-background=orange] {
   background-color: #F47D20;
 }
-
+.banner[data-background=gray] {
+  background-color: #F5F5F5;
+}
 
 .banner[data-background=halloween] {
   background-color: #7a36bf;
