@@ -13,7 +13,7 @@ function Banner({
   backgroundcolor,
   position,
   title = "Banner title Lorem ipsum dolor amet ipsum dolor amet.",
-  paragraph = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!",
+  paragraph,
   imgMobile = "https://www.lego.com/cdn/cs/set/assets/blt8a95702fdb4260d8/75331-Exclusive-202210-VIP-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2",
   imgTablet = "https://www.lego.com/cdn/cs/set/assets/bltf8f58f8e70b40985/75331-Exclusive-202210-VIP-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3",
   imgDesktop = "https://www.lego.com/cdn/cs/set/assets/bltd44334316ded064e/75331-Exclusive-202210-VIP-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3",
@@ -65,7 +65,7 @@ function Banner({
         <section className="bannerContent">
           {imgLogo && <img src={imgLogo} alt="Logo" />}
           <h3>{title}</h3>
-          <p>{paragraph}</p>
+          {paragraph && <p>{paragraph}</p>}
           <ul className="banner-btnGroup">
             <li className="banner-btnContainer">
               <ButtonCta color={btnColor} size="medium" link={btnLink1}>
