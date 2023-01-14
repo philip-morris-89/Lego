@@ -3,6 +3,7 @@ import DesignSystemLibrary from "../Pages/DesignSystemLibrary/DesignSystemLibrar
 import Index from "../Pages/Index/Index";
 import Home from "../Pages/Home/Home";
 import Banners from "../Pages/Banners/Banners";
+import Headers from "../Pages/Headers/Headers";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/designsystemlibrary" element={<DesignSystemLibrary />} />
         <Route path="/banners" element={<Banners />} />
+        <Route path="/headers" element={<Headers />} />
       </Routes>
     </div>
   );
