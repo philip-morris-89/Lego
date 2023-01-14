@@ -1,5 +1,3 @@
-/* =========================================================== Template 300 */
-
 .quickLink {
   display: flex;
   flex-direction: column;
@@ -19,6 +17,7 @@
 }
 .quickLink h6 {
   padding: 0.5rem 0;
+  font-size: 0.75rem;
 }
 @media only screen and (min-width: 426px) {
   .quickLink img {
@@ -35,4 +34,4 @@
   .quickLink:last-child {
     margin-right: 0;
   }
-} /*# sourceMappingURL=quickLinks.css.map */
+}
