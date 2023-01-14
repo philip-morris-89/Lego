@@ -89,6 +89,28 @@ function Banners() {
         btnLink1="./"
         btnColor="black"
       />
+
+      {/* XMAS BOTTOM */}
+
+      <Banner
+        size="large"
+        textcolor="white"
+        backgroundcolor="black"
+        position="left"
+        title="Rendi le feste ancora più divertenti"
+        paragraph="Per far partecipare i bambini allo spirito natalizio, un gioco è il regalo perfetto!"
+        imgMobile="https://www.lego.com/cdn/cs/set/assets/blt10cffa5ad9248669/Holiday-TVC-Seasonal-202211-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
+        imgTablet="https://www.lego.com/cdn/cs/set/assets/blt07a69c3fe2d7a067/Holiday-TVC-Seasonal-202211-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3"
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt225eb8c4b442af42/Holiday-TVC-Seasonal-202211-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3"
+        imgLogo="https://www.lego.com/cdn/cs/set/assets/blt5fccba879ba76cc9/RTW_logo_neg_300w.png?format=png&height=60&dpr=2"
+        btnText1="Compra ora"
+        btnLink1="./"
+        btnText2="Scopri"
+        btnLink2="./"
+        btnColor="white"
+        
+      /> 
+
     </div>
   );
 }
