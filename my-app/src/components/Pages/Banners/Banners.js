@@ -73,6 +73,22 @@ function Banners() {
         btnLink1="./"
         btnColor="black"
       />
+      {/* XMAS MIDDLE */}
+
+      <Banner
+        size="large"
+        textcolor="black"
+        backgroundcolor="xmas"
+        position="left"
+        title="Scopri un'offerta"
+        paragraph="Da omaggi con l'acquisto a sconti speciali, trova subito offerte e promozioni."
+        imgMobile="https://www.lego.com/cdn/cs/set/assets/blt7fa4f6d8ebea01f1/Holiday-Landing-202212-Promo-Hero-Standard-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2"
+        imgTablet="https://www.lego.com/cdn/cs/set/assets/bltdb9b63d7ff80e7a2/Holiday-Landing-202212-Promo-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3"
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/bltf125a015f20df617/Holiday-Landing-202212-Promo-Hero-Standard-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
+        btnText1="Scopri di più"
+        btnLink1="./"
+        btnColor="black"
+      />
     </div>
   );
 }
