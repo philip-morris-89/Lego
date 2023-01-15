@@ -52,7 +52,7 @@ function Banner({
             className="bannerPicture-source"
             alt=""
             type="image/webp"
-            media="(min-width: 425px)"
+            media="(min-width: 601px)"
             srcset={imgTablet}
           />
           <img className="bannerPicture-img" alt="" src={imgMobile} />
