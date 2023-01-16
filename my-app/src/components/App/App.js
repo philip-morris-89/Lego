@@ -5,6 +5,7 @@ import Home from "../Pages/Home/Home";
 import Banners from "../Pages/Banners/Banners";
 import Headers from "../Pages/Headers/Headers";
 import "./App.css";
+import InjectProductCard from "../Ui/InjectProduct/InjectProduct";
 
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
         <Route path="/designsystemlibrary" element={<DesignSystemLibrary />} />
         <Route path="/banners" element={<Banners />} />
         <Route path="/headers" element={<Headers />} />
+        
       </Routes>
+      <InjectProductCard/>
     </div>
   );
 }
