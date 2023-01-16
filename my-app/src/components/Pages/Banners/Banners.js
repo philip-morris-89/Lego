@@ -91,6 +91,7 @@ function Banners() {
         btnLink1="./"
         btnColor="black"
       />
+      
       {/* XMAS MIDDLE */}
 
       <Banner
@@ -127,9 +128,9 @@ function Banners() {
         btnText2="Scopri"
         btnLink2="./"
         btnColor="white"
-        
       /> 
       {/* HALLOWEEN TOP */}
+
       <Banner
         size="large"
         textcolor="white"
@@ -140,8 +141,6 @@ function Banners() {
         imgMobile="https://www.lego.com/cdn/cs/set/assets/blt2061ef4b2b6cc408/1802-Landing-202209-KV-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
         imgTablet="https://www.lego.com/cdn/cs/set/assets/blt8ef1049579e29dda/1802-Landing-202209-KV-Hero-Standard-Medium.jpg?fit=crop&format=webply&quality=80&width=900&height=350&dpr=3"
         imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt97dd324494c3019d/1802-Landing-202209-KV-Hero-Standard-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
-       
-        
       /> 
 
       {/* HALLOWEEN MIDDLE*/}
@@ -160,6 +159,23 @@ function Banners() {
         btnLink1="./"
         btnColor="white"
         
+      /> 
+
+      {/* HALLOWEEN BOTTOM*/}
+
+      <Banner
+        size="large"
+        textcolor="black"
+        backgroundcolor="halloweengreen"
+        position="center"
+        title="Trova il regalo perfetto"
+        paragraph="Prova la pagina Trova regali per trovare fantastiche idee regalo per tutti."
+        imgMobile="https://www.lego.com/cdn/cs/set/assets/bltfd4ea27f6014b92c/1802-Landing-202209-GF-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
+        imgTablet="https://www.lego.com/cdn/cs/set/assets/blt5d09b11d3105a0d9/1802-Landing-202209-GF-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3"
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blte1e1f3aa76111962/1802-Landing-202209-GF-Hero-Standard-Large-v2.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3" 
+        btnText1="Scopri"
+        btnLink1="./"
+        btnColor="black"
       /> 
 
     </div>
