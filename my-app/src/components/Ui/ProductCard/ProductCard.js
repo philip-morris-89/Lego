@@ -7,7 +7,7 @@ import "../ProductCard/productCard.css";
 // che per l'immagile, onclick per impostare il bottone.
 
 function ProductCard({
-  badge: boolean | string = false,
+  badge= false,
   sconto = 0,
   linkimmagine = "https://www.lego.com/cdn/cs/set/assets/bltdcfa4924bc8abd0a/21335.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
   titolo = "Product Title",

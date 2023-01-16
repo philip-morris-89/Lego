@@ -6,6 +6,7 @@ import Banners from "../Pages/Banners/Banners";
 import Headers from "../Pages/Headers/Headers";
 import "./App.css";
 
+
 function App() {
   return (
     <div className="app">
