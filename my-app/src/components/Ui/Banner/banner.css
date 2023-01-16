@@ -102,6 +102,9 @@
 .banner[data-background=halloween] {
   background-color: #211337;
 }
+.banner[data-background=halloweenlight] {
+  background-color: #7A36BF;
+}
 
 .banner[data-background=xmas] {
   background-color: #33a19d;

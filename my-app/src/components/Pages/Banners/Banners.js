@@ -144,7 +144,23 @@ function Banners() {
         
       /> 
 
+      {/* HALLOWEEN MIDDLE*/}
 
+      <Banner
+        size="large"
+        textcolor="white"
+        backgroundcolor="halloweenlight"
+        position="center"
+        title="Scopri un'offerta"
+        paragraph="Da omaggi con l'acquisto a sconti speciali, guarda subito le promozioni in corso."
+        imgMobile="https://www.lego.com/cdn/cs/set/assets/blt72739bf20ca7e918/1802-Landing-202209-GV1-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
+        imgTablet="https://www.lego.com/cdn/cs/set/assets/blt4fd274e9fc18c789/1802-Landing-202209-GV1-Hero-Standard-Medium.jpg?fit=crop&format=webply&quality=80&width=900&height=350&dpr=3"
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt4673299ddda248ac/1802-Landing-202209-GV1-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3" 
+        btnText1="Scopri di più"
+        btnLink1="./"
+        btnColor="white"
+        
+      /> 
 
     </div>
   );
