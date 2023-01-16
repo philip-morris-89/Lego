@@ -20,7 +20,7 @@ function Banner({
   video,
   imgBrand,
   imgLogo,
-  btnText1 = "Button 1",
+  btnText1,
   btnLink1,
   btnText2,
   btnLink2,
@@ -71,16 +71,18 @@ function Banner({
           <h3>{title}</h3>
           {paragraph && <p>{paragraph}</p>}
           <ul className="banner-btnGroup">
+          {btnText1 && (
             <li className="banner-btnContainer">
-              <ButtonCta color={btnColor} size="medium" link={btnLink1}>
+               {<ButtonCta color={btnColor} size="medium" link={btnLink1}>
                 {btnText1}
-              </ButtonCta>
+              </ButtonCta>}
             </li>
+            )}
             {btnText2 && (
               <li className="banner-btnContainer">
-                <ButtonCta color={btnColor} size="medium" link={btnLink2}>
+                {<ButtonCta color={btnColor} size="medium" link={btnLink2}>
                   {btnText2}
-                </ButtonCta>
+                </ButtonCta>}
               </li>
             )}
           </ul>

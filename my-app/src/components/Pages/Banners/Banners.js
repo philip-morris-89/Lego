@@ -129,6 +129,20 @@ function Banners() {
         btnColor="white"
         
       /> 
+      {/* HALLOWEEN TOP */}
+      <Banner
+        size="large"
+        textcolor="white"
+        backgroundcolor="halloween"
+        position="left"
+        title="Preparati per una vera sorpresa"
+        paragraph="Rendi Halloween ancora più divertente con idee regalo, decorazioni per la casa e altro ancora."
+        imgMobile="https://www.lego.com/cdn/cs/set/assets/blt2061ef4b2b6cc408/1802-Landing-202209-KV-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
+        imgTablet="https://www.lego.com/cdn/cs/set/assets/blt8ef1049579e29dda/1802-Landing-202209-KV-Hero-Standard-Medium.jpg?fit=crop&format=webply&quality=80&width=900&height=350&dpr=3"
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt97dd324494c3019d/1802-Landing-202209-KV-Hero-Standard-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
+       
+        
+      /> 
 
 
 
