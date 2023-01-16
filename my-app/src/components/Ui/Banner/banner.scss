@@ -93,8 +93,14 @@
 .banner[data-background=gray] {
   background-color: #F5F5F5;
 }
-.banner[data-background="halloween"] {
-  background-color: #7a36bf;
+.banner[data-background=halloween] {
+  background-color: #211337;
+}
+.banner[data-background=halloweenlight] {
+  background-color: #7A36BF;
+}
+.banner[data-background=halloweengreen] {
+  background-color: #AACE13;
 }
 .banner[data-background="xmas"] {
   background-color: #33a19d;
