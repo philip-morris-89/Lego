@@ -96,4 +96,17 @@
   color: black;
   border: none;
   text-decoration: underline;
-}/*# sourceMappingURL=buttonCta.css.map */
+  
+}.buttonCta[data-style=none][data-color=white]{
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.buttonCta[data-style=none][data-color=white]:hover{
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-decoration: underline;
+}
+  /*# sourceMappingURL=buttonCta.css.map */
+
