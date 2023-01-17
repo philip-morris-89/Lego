@@ -20,6 +20,9 @@ function Index() {
         <li>
           <Link to="/headers">Headers</Link>
         </li>
+        <li>
+          <Link to="/sliders">Sliders</Link>
+        </li>
       </ul>
     </div>
   );

@@ -58,8 +58,9 @@
 
 .banner-btnGroup {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding: 0.5rem 0;
+  gap: 1rem;
 }
 
 .banner-btnContainer {
@@ -90,8 +91,24 @@
   background-color: var(--blue-800);
 }
 
+.banner[data-background=orange] {
+  background-color: #F47D20;
+}
+
+.banner[data-background=gray] {
+  background-color: #F5F5F5;
+}
+
 .banner[data-background=halloween] {
-  background-color: #7a36bf;
+  background-color: #211337;
+}
+
+.banner[data-background=halloweenlight] {
+  background-color: #7A36BF;
+}
+
+.banner[data-background=halloweengreen] {
+  background-color: #AACE13;
 }
 
 .banner[data-background=xmas] {
@@ -99,7 +116,7 @@
 }
 
 /* ================================================================ Responsive */
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 601px) {
   .banner [data-container] {
     position: absolute;
   }
@@ -142,9 +159,6 @@
   .banner[data-position=left] .banner-btnGroup {
     justify-content: left;
   }
-  .banner[data-position=left] .banner-btnContainer:first-child {
-    margin-right: 1rem;
-  }
   .banner[data-position=right] .bannerMedia-mark {
     right: inherit;
     left: 1rem;
@@ -158,9 +172,6 @@
   }
   .banner[data-position=right] .banner-btnGroup {
     justify-content: right;
-  }
-  .banner[data-position=right] .banner-btnContainer:last-child {
-    margin-left: 1rem;
   }
   .banner[data-position=center] .bannerMedia-mark {
     right: 1rem;
