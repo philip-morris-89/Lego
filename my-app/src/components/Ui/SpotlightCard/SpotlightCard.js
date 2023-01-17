@@ -13,27 +13,26 @@ function SpotlightCard({
 }) {
   return (
     <div className="spotlightcard">
-      <a className="spotlightcardcontainer">
-      <div className="img-container">
-      <picture className="bannerPicture">
-          <source
-            alt=""
-            type="image/webp"
-            media="(min-width: 1024px)"
-            srcset={imgDesktop}
-          />
-          <img className="bannerPicture-img" alt="" src={imgMobile} />
-        </picture>
-        <img className="logo" src={logo} />
-      </div>
-       
+      <a href="./" className="spotlightcardcontainer">
+        <div className="img-container">
+          <picture className="bannerPicture">
+            <source
+              alt=""
+              type="image/webp"
+              media="(min-width: 1024px)"
+              srcset={imgDesktop}
+            />
+            <img className="bannerPicture-img" alt="" src={imgMobile} />
+          </picture>
+          <img className="logo" src={logo} alt="" />
+        </div>
+
         <div className="text-container-desktop">
           <h2 className="title">{title}</h2>
           <p className="subtitle">{subtitle}</p>
           <ButtonCta color="white" size="small" theme="none" link={link}>
             {linktitle}
           </ButtonCta>
-     
         </div>
         <div className="text-container-mobile">
           <h2 className="title">{title}</h2>
