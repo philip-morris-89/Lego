@@ -35,7 +35,7 @@ function Banners() {
         imgMobile="https://www.lego.com/cdn/cs/set/assets/blt52bb639fa70f0714/1812-Novelty-Homepage-202301-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
         imgTablet="https://www.lego.com/cdn/cs/set/assets/blt6206e920f291a8a1/1812-Novelty-Homepage-202301-Hero-Standard-Medium.jpg?fit=crop&format=webply&quality=80&width=900&height=351&dpr=3"
         imgDesktop="https://www.lego.com/cdn/cs/set/assets/blta9f91fcf1dfd9551/1812-Novelty-Homepage-202301-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3"
-        video= "https://www.lego.com/cdn/cs/set/assets/bltd80547f5b208ae98/1812-Novelty-Homepage-202301-Hero-StandardMotion-Large.mp4"
+        video="https://www.lego.com/cdn/cs/set/assets/bltd80547f5b208ae98/1812-Novelty-Homepage-202301-Hero-StandardMotion-Large.mp4"
         btnText1="Compra Ora"
         btnLink1="./"
         btnColor="black"
@@ -70,14 +70,14 @@ function Banners() {
         imgMobile="https://www.lego.com/cdn/cs/set/assets/blt3fb3a7afdd5a6061/Grey-Email-Signup-Hero-Mobile.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2"
         imgTablet="https://www.lego.com/cdn/cs/set/assets/blteaf8164c0008b6ba/Grey-Email-Signup-Hero-Medium-1.jpg?fit=crop&format=webply&quality=80&width=900&height=350&dpr=3"
         imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt8c7ec696474ed641/Grey-Email-Signup-Hero-Standard-1.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
-        btnText1="Compra Ora"
+        btnText1="Iscriviti"
         btnLink1="./"
         btnColor="black"
       />
 
       {/* XMAS TOP */}
 
-        <Banner
+      <Banner
         size="large"
         textcolor="black"
         backgroundcolor="xmas"
@@ -91,7 +91,7 @@ function Banners() {
         btnLink1="./"
         btnColor="black"
       />
-      
+
       {/* XMAS MIDDLE */}
 
       <Banner
@@ -128,7 +128,7 @@ function Banners() {
         btnText2="Scopri"
         btnLink2="./"
         btnColor="white"
-      /> 
+      />
       {/* HALLOWEEN TOP */}
 
       <Banner
@@ -141,7 +141,7 @@ function Banners() {
         imgMobile="https://www.lego.com/cdn/cs/set/assets/blt2061ef4b2b6cc408/1802-Landing-202209-KV-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
         imgTablet="https://www.lego.com/cdn/cs/set/assets/blt8ef1049579e29dda/1802-Landing-202209-KV-Hero-Standard-Medium.jpg?fit=crop&format=webply&quality=80&width=900&height=350&dpr=3"
         imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt97dd324494c3019d/1802-Landing-202209-KV-Hero-Standard-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
-      /> 
+      />
 
       {/* HALLOWEEN MIDDLE*/}
 
@@ -154,12 +154,11 @@ function Banners() {
         paragraph="Da omaggi con l'acquisto a sconti speciali, guarda subito le promozioni in corso."
         imgMobile="https://www.lego.com/cdn/cs/set/assets/blt72739bf20ca7e918/1802-Landing-202209-GV1-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
         imgTablet="https://www.lego.com/cdn/cs/set/assets/blt4fd274e9fc18c789/1802-Landing-202209-GV1-Hero-Standard-Medium.jpg?fit=crop&format=webply&quality=80&width=900&height=350&dpr=3"
-        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt4673299ddda248ac/1802-Landing-202209-GV1-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3" 
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt4673299ddda248ac/1802-Landing-202209-GV1-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3"
         btnText1="Scopri di più"
         btnLink1="./"
         btnColor="white"
-        
-      /> 
+      />
 
       {/* HALLOWEEN BOTTOM*/}
 
@@ -172,12 +171,11 @@ function Banners() {
         paragraph="Prova la pagina Trova regali per trovare fantastiche idee regalo per tutti."
         imgMobile="https://www.lego.com/cdn/cs/set/assets/bltfd4ea27f6014b92c/1802-Landing-202209-GF-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2"
         imgTablet="https://www.lego.com/cdn/cs/set/assets/blt5d09b11d3105a0d9/1802-Landing-202209-GF-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3"
-        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blte1e1f3aa76111962/1802-Landing-202209-GF-Hero-Standard-Large-v2.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3" 
+        imgDesktop="https://www.lego.com/cdn/cs/set/assets/blte1e1f3aa76111962/1802-Landing-202209-GF-Hero-Standard-Large-v2.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3"
         btnText1="Scopri"
         btnLink1="./"
         btnColor="black"
-      /> 
-
+      />
     </div>
   );
 }
