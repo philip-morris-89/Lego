@@ -1,73 +1,67 @@
 .spotlightcard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.spotlightcardcontainer{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: auto;
+.spotlightcard .spotlightcardcontainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  text-decoration: none;
 }
-
- .image {
-    width: 100%;
-    height: auto;
-  
-} 
-
-.text-container-desktop {
+.spotlightcard .image {
+  width: 100%;
+  height: auto;
+}
+.spotlightcard .text-container-desktop {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  width: 100%;
+  line-height: 2.5rem;
+  height: 100%;
+  text-align: center;
+  line-height: 1.2;
+}
+.spotlightcard .text-container-mobile {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  width: 100%;
+  line-height: 2.5rem;
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+  line-height: 1.4;
+}
+@media only screen and (min-width: 1024px) {
+  .spotlightcard .text-container-desktop {
+    display: flex;
+  }
+  .spotlightcard .text-container-mobile {
     display: none;
-    position: absolute;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    width: 100%;
-    line-height: 2.5rem;
-    height: 100%;
-    text-align: center;
+  }
 }
-
-
-.text-container-mobile{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    width: 100%;
-    line-height: 2.5rem;
-    padding: 1rem;
-    background-color: black;
-    text-align: center;
+.spotlightcard .logo {
+  position: absolute;
+  bottom: 1rem;
+  width: auto;
+  height: 2.5rem;
+  right: 1rem;
 }
-
-@media only screen and (min-width: 1024px){
-    .text-container-desktop {
-        display: flex;
-    }
-    .text-container-mobile{
-        display: none;
-    }
+.spotlightcard .title {
+  margin-bottom: 1rem;
 }
-
-.logo{
-    position: absolute;
-    bottom: 1rem;
-    width: auto;
-    height: 3rem;
-    right: 1rem;
-
+.spotlightcard .text-container-desktop .title {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: medium;
 }
-
-
-.text-container-desktop .title{
-    margin-top: 2rem;
-}
-
-.img-container{
-    position: relative;
-}
-
-
+.spotlightcard .img-container {
+  position: relative;
+}/*# sourceMappingURL=spotlightCard.css.map */
