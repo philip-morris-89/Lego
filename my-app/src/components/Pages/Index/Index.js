@@ -23,6 +23,9 @@ function Index() {
         <li>
           <Link to="/sliders">Sliders</Link>
         </li>
+        <li>
+          <Link to="/articles">Articles</Link>
+        </li>
       </ul>
     </div>
   );

@@ -14,6 +14,8 @@ import UiCardItem from "../../Ui/UiCardItem/UiCardItem";
 import "./designSystemLibrary.css";
 import QuickLink from "../../Ui/QuickLink/QuickLink";
 import SpotlightCard from "../../Ui/SpotlightCard/SpotlightCard";
+import Banners from "../../Pages/Banners/Banners";
+import Headers from "../../Pages/Headers/Headers";
 
 function DesignSystemLibrary() {
   return (
@@ -67,6 +69,9 @@ function DesignSystemLibrary() {
               </li>
               <li>
                 <a href="#buttonCta">Button Call to action (CTA)</a>
+              </li>
+              <li>
+                <a href="#pagetitles">Page titles</a>
               </li>
               <li>
                 <a href="#ratings">Star ratings</a>
@@ -263,6 +268,24 @@ function DesignSystemLibrary() {
               <UiCardItem title="Large" component="ButtonCta9"></UiCardItem>
             </UiCard>
 
+            <hr id="pagetitles" />
+
+            <UiCard
+              title="Page titles"
+              description="Page titles have different alignment."
+              codesnippet='<PageHeader
+              text="..."
+              position="center"
+              size="large"
+              btnText1="Button"
+              btnText2="Button"
+            />'
+            >
+              <UiCardItem>
+                <Headers />
+              </UiCardItem>
+            </UiCard>
+
             <hr id="ratings" />
 
             <UiCard
@@ -394,6 +417,23 @@ function DesignSystemLibrary() {
               </UiCardItem>
             </UiCard>
           </div>
+        </section>
+
+        <hr id="banners" />
+
+        <section className="designSystemLibrary--section section--banners">
+          <div className="designSystemLibrary--container">
+            <header className="designSystemLibrary--header">
+              <h1>Banners</h1>
+              <p>
+                Components are interactive building blocks for creating a user
+                interface.
+              </p>
+            </header>
+          </div>
+          <br />
+          <br />
+          <Banners />
         </section>
       </main>
     </div>

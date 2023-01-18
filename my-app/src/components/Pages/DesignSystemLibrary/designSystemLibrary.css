@@ -14,7 +14,7 @@
   bottom: 0;
   width: 25%;
   background-color: white;
-  padding: 1rem;
+  padding: 3rem;
   padding-top: 2rem;
   overflow-y: auto;
 }
@@ -159,4 +159,16 @@
 .section--cards .designSystemLibrary--header h1,
 .section--cards .uiCard--footer h6 {
   color: var(--green-500);
+}
+
+.section--banners {
+  border-color: var(--purple-500);
+  border-color: black;
+}
+.section--banners .designSystemLibrary--header h1,
+.section--banners .uiCard--footer h6 {
+  color: var(--purple-500);
+}
+.section--banners .banners {
+  width: 100%;
 }/*# sourceMappingURL=designSystemLibrary.css.map */

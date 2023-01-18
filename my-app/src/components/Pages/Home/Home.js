@@ -1,6 +1,7 @@
 import React from "react";
-import ArticleCard from "../../Ui/ArticleCard/ArticleCard";
 import Banner from "../../Ui/Banner/Banner";
+import Footer from "../../Ui/Footer/Footer";
+import InjectArticles from "../../Ui/InjectArticles/InjectArticles";
 import InjectProductCard from "../../Ui/InjectProduct/InjectProduct";
 import PageHeader from "../../Ui/PageHeader/PageHeader";
 import Quicklinks from "../../Ui/QuickLinks/Quicklinks";
@@ -34,18 +35,7 @@ function Home() {
       </Slider>
       <PageHeader text="Arrivi di questo mese" position="left" size="large" />
       <Slider slides="four">
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
+        <InjectArticles />
       </Slider>
       <PageHeader text="In evidenza..." position="left" size="large" />
       <div data-container="large">
@@ -54,7 +44,13 @@ function Home() {
             <SpotlightCard />
           </li>
           <li>
-            <SpotlightCard />
+            <SpotlightCard
+              imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt0f4fe6d641a4346b/75347-T1-202301-PS-Block-Mixed-Large.jpg?fit=crop&format=jpg&quality=80&width=650&height=720&dpr=2"
+              imgMobile="https://www.lego.com/cdn/cs/set/assets/blt01707fdb53e106c1/75347-T1-202301-PS-Block-Mixed-Mobile.jpg?fit=crop&format=jpg&quality=80&width=375&height=260&dpr=1.5"
+              logo="https://www.lego.com/cdn/cs/set/assets/blt3ef553a3a4357545/starWars_logo_neg_300w.png?format=png&height=60&dpr=1"
+              title="Dai vita ad avventure galattiche"
+              subtitle="Ricrea battaglie classiche con i nuovi set LEGO®."
+            />
           </li>
         </ul>
       </div>
@@ -67,19 +63,8 @@ function Home() {
         position="left"
         size="large"
       />
-      <Slider slides="four">
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
+      <Slider slides="three" disableDesktop="true">
+        <InjectArticles category={1} />
       </Slider>
 
       <br />
@@ -103,20 +88,11 @@ function Home() {
       />
 
       <PageHeader text="Leggi tutto" position="left" size="large" />
-      <Slider slides="four">
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
-        <li className="slider-li">
-          <ArticleCard />
-        </li>
+      <Slider slides="four" disableDesktop="true">
+        <InjectArticles category={2} />
       </Slider>
+
+      <Footer />
     </div>
   );
 }

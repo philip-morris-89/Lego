@@ -21,7 +21,7 @@ $section-5-color: var(--orange-500);
   bottom: 0;
   width: $aside-width-size;
   background-color: white;
-  padding: 1rem;
+  padding: 3rem;
   padding-top: 2rem;
   overflow-y: auto;
 
@@ -190,5 +190,18 @@ $section-5-color: var(--orange-500);
   .designSystemLibrary--header h1,
   .uiCard--footer h6 {
     color: $section-3-color;
+  }
+}
+
+.section--banners {
+  border-color: $section-4-color;
+  border-color: black;
+  .designSystemLibrary--header h1,
+  .uiCard--footer h6 {
+    color: $section-4-color;
+  }
+
+  .banners {
+    width: 100%;
   }
 }
