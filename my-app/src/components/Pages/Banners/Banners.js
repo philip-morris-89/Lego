@@ -3,7 +3,7 @@ import Banner from "../../Ui/Banner/Banner";
 
 function Banners() {
   return (
-    <div>
+    <div className="banners">
       <Banner
         size="large"
         textcolor="white"
