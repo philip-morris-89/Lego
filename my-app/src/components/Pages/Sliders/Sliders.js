@@ -2,10 +2,14 @@ import React from "react";
 import ProductCard from "../../Ui/ProductCard/ProductCard";
 import ArticleCard from "../../Ui/ArticleCard/ArticleCard";
 import Slider from "../../Ui/Slider/Slider";
+import InjectProductCard from "../../Ui/InjectProduct/InjectProduct";
 
 function Sliders() {
   return (
     <div>
+      <Slider slides="four">
+        <InjectProductCard />
+      </Slider>
       <br />
       <br />
       <br />

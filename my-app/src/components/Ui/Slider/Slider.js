@@ -9,14 +9,7 @@ function Slider({ slides = "four", disableDesktop = "false", children }) {
       data-disabled-desktop={disableDesktop}
     >
       <section data-container="large">
-        <ul className="slider-ul">
-          <li className="slider-li">{children}</li>
-          <li className="slider-li">{children}</li>
-          <li className="slider-li">{children}</li>
-          <li className="slider-li">{children}</li>
-          <li className="slider-li">{children}</li>
-          <li className="slider-li">{children}</li>
-        </ul>
+        <ul className="slider-ul">{children}</ul>
       </section>
     </div>
   );

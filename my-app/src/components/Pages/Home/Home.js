@@ -1,8 +1,8 @@
 import React from "react";
 import ArticleCard from "../../Ui/ArticleCard/ArticleCard";
 import Banner from "../../Ui/Banner/Banner";
+import InjectProductCard from "../../Ui/InjectProduct/InjectProduct";
 import PageHeader from "../../Ui/PageHeader/PageHeader";
-import ProductCard from "../../Ui/ProductCard/ProductCard";
 import Quicklinks from "../../Ui/QuickLinks/Quicklinks";
 import Slider from "../../Ui/Slider/Slider";
 import SpotlightCard from "../../Ui/SpotlightCard/SpotlightCard";
@@ -30,19 +30,22 @@ function Home() {
 
       <PageHeader text="Consigliati per te" position="left" size="large" />
       <Slider slides="four">
-        <ProductCard
-          novità={true}
-          sconto={40}
-          titolo={"Prodotto di prova"}
-          prezzo={79.99}
-          rating={4}
-          template={"template1"}
-          linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"
-        />
+        <InjectProductCard />
       </Slider>
       <PageHeader text="Arrivi di questo mese" position="left" size="large" />
       <Slider slides="four">
-        <ArticleCard />
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
       </Slider>
       <PageHeader text="In evidenza..." position="left" size="large" />
       <div data-container="large">
@@ -57,15 +60,7 @@ function Home() {
       </div>
       <PageHeader text="Set in evidenza" position="left" size="large" />
       <Slider slides="four">
-        <ProductCard
-          novità={true}
-          sconto={40}
-          titolo={"Prodotto di prova"}
-          prezzo={79.99}
-          rating={4}
-          template={"template1"}
-          linkprodotto="https://www.lego.com/it-it/product/galaxy-explorer-10497"
-        />
+        <InjectProductCard />
       </Slider>
       <PageHeader
         text="I preferiti di questa settimana"
@@ -73,7 +68,18 @@ function Home() {
         size="large"
       />
       <Slider slides="four">
-        <ArticleCard />
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
       </Slider>
 
       <br />
@@ -98,7 +104,18 @@ function Home() {
 
       <PageHeader text="Leggi tutto" position="left" size="large" />
       <Slider slides="four">
-        <ArticleCard />
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
+        <li className="slider-li">
+          <ArticleCard />
+        </li>
       </Slider>
     </div>
   );
