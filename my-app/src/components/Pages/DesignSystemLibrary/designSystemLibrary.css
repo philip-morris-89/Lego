@@ -61,6 +61,12 @@
 .designSystemLibrary--aside ul > li:nth-child(3) > a, .designSystemLibrary--aside ul > li:nth-child(3) ol li {
   color: var(--green-500);
 }
+.designSystemLibrary--aside ul > li:nth-child(4) > a, .designSystemLibrary--aside ul > li:nth-child(4) ol li {
+  color: var(--purple-500);
+}
+.designSystemLibrary--aside ul > li:nth-child(5) > a, .designSystemLibrary--aside ul > li:nth-child(5) ol li {
+  color: var(--orange-500);
+}
 .designSystemLibrary--aside ul > li > a {
   font-size: 1rem;
   color: black;

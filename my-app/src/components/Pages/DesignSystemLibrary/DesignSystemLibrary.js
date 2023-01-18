@@ -13,6 +13,7 @@ import UiCard from "../../Ui/UiCard/UiCard";
 import UiCardItem from "../../Ui/UiCardItem/UiCardItem";
 import "./designSystemLibrary.css";
 import QuickLink from "../../Ui/QuickLink/QuickLink";
+import SpotlightCard from "../../Ui/SpotlightCard/SpotlightCard";
 
 function DesignSystemLibrary() {
   return (
@@ -59,13 +60,19 @@ function DesignSystemLibrary() {
             </ol>
           </li>
           <li>
-            <a href="#buttons">Buttons</a>
+            <a href="#components">Components</a>
             <ol>
               <li>
                 <a href="#buttonAtc">Button Add to cart (ATC)</a>
               </li>
               <li>
                 <a href="#buttonCta">Button Call to action (CTA)</a>
+              </li>
+              <li>
+                <a href="#ratings">Star ratings</a>
+              </li>
+              <li>
+                <a href="#quicklinks">Quick links</a>
               </li>
             </ol>
           </li>
@@ -75,14 +82,20 @@ function DesignSystemLibrary() {
               <li>
                 <a href="#productCard">Product Card</a>
               </li>
+              <li>
+                <a href="#articlecard">Article Card</a>
+              </li>
+              <li>
+                <a href="#spotlightcard">Spotlight Card</a>
+              </li>
             </ol>
           </li>
 
           <li>
-            <a href="#ratings">Ratings</a>
+            <a href="#banners">Banners</a>
             <ol>
               <li>
-                <a href="#starratings">Star ratings</a>
+                <a href="#banners">Landing pages</a>
               </li>
             </ol>
           </li>
@@ -180,12 +193,12 @@ function DesignSystemLibrary() {
           </div>
         </section>
 
-        <hr id="buttons" />
+        <hr id="components" />
 
         <section className="designSystemLibrary--section section--buttons">
           <div className="designSystemLibrary--container">
             <header className="designSystemLibrary--header">
-              <h1>Buttons</h1>
+              <h1>Components</h1>
               <p>
                 Components are interactive building blocks for creating a user
                 interface.
@@ -197,8 +210,6 @@ function DesignSystemLibrary() {
             <UiCard
               title="Button Atc (Add to cart)"
               description="The button comes with two variants: primary and secondary."
-              codesnippet='<ButtonAtc color="primary">Add to cart</ButtonAtc>'
-              codesnippet1='<ButtonAtc color="secondary">Add to cart</ButtonAtc>'
             >
               <UiCardItem title="Primary" component="ButtonAtc1"></UiCardItem>
               <UiCardItem title="Secondary" component="ButtonAtc2"></UiCardItem>
@@ -207,9 +218,9 @@ function DesignSystemLibrary() {
             <UiCard
               title="Button Atc (Sizes)"
               description="The button comes with three variants: small, medium and large."
-              codesnippet='<ButtonAtc size="small">Add to cart</ButtonAtc>'
-              codesnippet1='<ButtonAtc size="medium">Add to cart</ButtonAtc>'
-              codesnippet2='<ButtonAtc size="large">Add to cart</ButtonAtc>'
+              codesnippet='<ButtonAtc color="primary" size="small">Add to cart</ButtonAtc>'
+              codesnippet1='<ButtonAtc color="primary" size="medium">Add to cart</ButtonAtc>'
+              codesnippet2='<ButtonAtc color="primary" size="large">Add to cart</ButtonAtc>'
             >
               <UiCardItem title="Small" component="ButtonAtc3"></UiCardItem>
               <UiCardItem title="Medium" component="ButtonAtc4"></UiCardItem>
@@ -221,9 +232,9 @@ function DesignSystemLibrary() {
             <UiCard
               title="Button CTA (Call to action)"
               description="The button comes with two colors: Black and White."
-              codesnippet="<ButtonCta>Scopri di più</ButtonCta>"
-              codesnippet1='<ButtonCta color="white">Scopri di più</ButtonCta>}'
-              codesnippet2='<ButtonCta color="black" theme="outline">Scopri di più</ButtonCta>'
+              codesnippet='<ButtonCta color="black" theme="solid" shape="rectangle">Scopri di più</ButtonCta>'
+              codesnippet1='<ButtonCta color="white" theme="solid" shape="rectangle">Scopri di più</ButtonCta>'
+              codesnippet2='<ButtonCta color="black" theme="outline" shape="rectangle">Scopri di più</ButtonCta>'
               color="yellow"
             >
               <UiCardItem
@@ -250,6 +261,50 @@ function DesignSystemLibrary() {
               <UiCardItem title="Small" component="ButtonCta7"></UiCardItem>
               <UiCardItem title="Medium" component="ButtonCta8"></UiCardItem>
               <UiCardItem title="Large" component="ButtonCta9"></UiCardItem>
+            </UiCard>
+
+            <hr id="ratings" />
+
+            <UiCard
+              title="Star Ratings"
+              description="Ratings are used to display product review scores"
+              codesnippet="<RatingStar score={0} />"
+              codesnippet1="<RatingStar score={3} />"
+              codesnippet2="<RatingStar score={5} />"
+            >
+              <UiCardItem>
+                <RatingStar score={0} />
+              </UiCardItem>
+              <UiCardItem>
+                <RatingStar score={3} />
+              </UiCardItem>
+              <UiCardItem>
+                <RatingStar score={5} />
+              </UiCardItem>
+            </UiCard>
+
+            <hr id="quicklinks" />
+
+            <UiCard
+              title="Quick Links"
+              description="Add description"
+              codesnippet="<QuickLink linkImmagine='url' titolo='Title' link='url'>"
+            >
+              <UiCardItem>
+                <QuickLink
+                  linkImmagine="https://www.lego.com/cdn/cs/set/assets/blt985c185e9456faed/Generic-Site-Wave-1-Exclusive-202208-Quicklink.png?fit=crop&format=png&width=80&height=65&dpr=3"
+                  titolo="Set esclisivi"
+                />
+              </UiCardItem>
+              <UiCardItem>
+                <QuickLink
+                  linkImmagine="https://www.lego.com/cdn/cs/set/assets/blt000ef33faa9bca80/offers_Promos-Home-2021-Quicklink.png?fit=crop&format=png&width=80&height=65&dpr=3"
+                  titolo="Offerte"
+                />
+              </UiCardItem>
+              <UiCardItem>
+                <QuickLink />
+              </UiCardItem>
             </UiCard>
           </div>
         </section>
@@ -298,7 +353,7 @@ function DesignSystemLibrary() {
               </UiCardItem>
             </UiCard>
 
-            <hr id="articleCard" />
+            <hr id="articlecard" />
             <UiCard
               title="Article Card"
               description="The article card shows a preview of an article page"
@@ -311,76 +366,31 @@ function DesignSystemLibrary() {
                 <ArticleCard />
               </UiCardItem>
             </UiCard>
-          </div>
-        </section>
 
-        <hr id="ratings" />
-
-        <section className="designSystemLibrary--section section--ratings">
-          <div className="designSystemLibrary--container">
-            <header className="designSystemLibrary--header">
-              <h1>Ratings</h1>
-              <p>
-                Components are interactive building blocks for creating a user
-                interface.
-              </p>
-            </header>
-
-            <hr id="productCard" />
-
+            <hr id="spotlightcard" />
             <UiCard
-              title="Star Ratings"
-              description="Add description"
-              codesnippet="<RatingStar score={0} />"
-              codesnippet1="<RatingStar score={3} />"
-              codesnippet2="<RatingStar score={5} />"
+              title="Spotlight Card"
+              description="The spotlight card shows articles that are highlighted."
+              codesnippet='<SpotlightCard
+              imgDesktop="url"
+              imgMobile="url"
+              logo="url"
+              title="Card title"
+              subtitle="Description"
+              linktitle="Button title"
+              link="./"
+            />'
             >
               <UiCardItem>
-                <RatingStar score={0} />
-              </UiCardItem>
-              <UiCardItem>
-                <RatingStar score={3} />
-              </UiCardItem>
-              <UiCardItem>
-                <RatingStar score={5} />
-              </UiCardItem>
-            </UiCard>
-          </div>
-        </section>
-
-        <hr id="quickLinks" />
-
-        <section className="designSystemLibrary--section section--quicklinks">
-          <div className="designSystemLibrary--container">
-            <header className="designSystemLibrary--header">
-              <h1>Quick links</h1>
-              <p>
-                Components are interactive building blocks for creating a user
-                interface.
-              </p>
-            </header>
-
-            <hr id="quickLinks" />
-
-            <UiCard
-              title="Quick Links"
-              description="Add description"
-              codesnippet="<QuickLink linkImmagine='url' titolo='Title' link='url'>"
-            >
-              <UiCardItem>
-                <QuickLink
-                  linkImmagine="https://www.lego.com/cdn/cs/set/assets/blt985c185e9456faed/Generic-Site-Wave-1-Exclusive-202208-Quicklink.png?fit=crop&format=png&width=80&height=65&dpr=3"
-                  titolo="Set esclisivi"
+                <SpotlightCard
+                  imgDesktop="https://www.lego.com/cdn/cs/set/assets/blt3c0b04b63c6a2e93/10307-Exclusive-202211-PS-Block-Mixed-Large.jpg?fit=crop&format=webply&quality=80&width=650&height=720&dpr=2"
+                  imgMobile="https://www.lego.com/cdn/cs/set/assets/blt4b9756a12ffb0392/10307-Exclusive-202211-PS-Block-Mixed-Mobile.jpg?fit=crop&format=webply&quality=80&width=375&height=260&dpr=1.5"
+                  logo="https://www.lego.com/cdn/cs/set/assets/bltdb8d448dcc06cf2b/icons-logo-neg-600w.png?format=png&height=60&dpr=1.5"
+                  title="Da Parigi con amore"
+                  subtitle="Costruisci un tributo alla città delle luci con il nuovo set Tour Eiffel."
+                  linktitle="Compra ora"
+                  link="./"
                 />
-              </UiCardItem>
-              <UiCardItem>
-                <QuickLink
-                  linkImmagine="https://www.lego.com/cdn/cs/set/assets/blt000ef33faa9bca80/offers_Promos-Home-2021-Quicklink.png?fit=crop&format=png&width=80&height=65&dpr=3"
-                  titolo="Offerte"
-                />
-              </UiCardItem>
-              <UiCardItem>
-                <QuickLink />
               </UiCardItem>
             </UiCard>
           </div>
