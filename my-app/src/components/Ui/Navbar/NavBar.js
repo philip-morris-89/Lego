@@ -7,6 +7,25 @@ function NavBar() {
   const [subTab, setSubTab] = useState("");
   const [overlay, setOverlay] = useState(false)
 
+  const onClickTab = (tab, e) => {
+    e.preventDefault(); 
+    setSubTab(""); 
+    setTab(tab); 
+    setOverlay(true)
+  }
+
+  const onClickSubTab = (subTab, e) => {
+    e.preventDefault(); 
+    setSubTab(subTab)
+  }
+
+  const onClickSidebarClose = (e) => {
+    e.preventDefault(); 
+    setOverlay(!overlay); 
+    setTab(""); 
+    setSubTab("")
+  }
+
 
   return (
     <nav className="navBar">
@@ -159,19 +178,19 @@ function NavBar() {
           <ul className="navBar-menu">
             <li className="navBar-menuItem">
               <a data-tab="acquista" href="" className={`${Tab === "acquista" ? "active" : ""}`}
-                 onClick={(e)=>{e.preventDefault(); setSubTab(""); setTab("acquista"); setOverlay(true)}}>
+                 onClick={(e) => onClickTab("acquista",e)}>
                 Acquista
               </a>
             </li>
             <li className="navBar-menuItem">
               <a data-tab="scopri" href="" className={`${Tab === "scopri" ? "active" : ""}`}
-                 onClick={(e)=>{e.preventDefault(); setSubTab(""); setTab("scopri"); setOverlay(true)}}>
+                 onClick={(e) => onClickTab("scopri",e)}>
                 Scopri
               </a>
             </li>
             <li className="navBar-menuItem">
               <a data-tab="aiuto" href="" className={`${Tab === "aiuto" ? "active" : ""}`}
-                 onClick={(e)=>{e.preventDefault(); setSubTab(""); setTab("aiuto"); setOverlay(true)}}>
+                 onClick={(e) => onClickTab("aiuto",e)}>
                 Aiuto
               </a>
             </li>
@@ -189,7 +208,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="setPerTema"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("setPerTema")}}
+                  onClick={(e)=>{onClickSubTab("setPerTema", e)}}
                 >
                   <span>Set per tema</span>
                   <svg
@@ -209,7 +228,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="eta"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("eta")}}
+                  onClick={(e)=>{onClickSubTab("eta", e)}}
                 >
                   <span>Età</span>
                   <svg
@@ -229,7 +248,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="prezzi"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("prezzi")}}
+                  onClick={(e)=>{onClickSubTab("prezzi", e)}}
                 >
                   <span>Prezzi</span>
                   <svg
@@ -249,7 +268,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="merchandising"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("merchandising")}}
+                  onClick={(e)=>{onClickSubTab("merchandising", e)}}
                 >
                   <span>Merchandising LEGO</span>
                   <svg
@@ -269,7 +288,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="interessi"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("interessi")}}
+                  onClick={(e)=>{onClickSubTab("interessi", e)}}
                 >
                   <span>Interessi</span>
                   <svg
@@ -289,7 +308,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="pick"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("pick")}}
+                  onClick={(e)=>{onClickSubTab("pick", e)}}
                 >
                   <span>Pick and Build</span>
                   <svg
@@ -515,7 +534,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="valori"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("valori")}}
+                  onClick={(e)=>{onClickSubTab("valori", e)}}
                 >
                   <span>I nostri valori</span>
                   <svg
@@ -535,7 +554,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="app"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("app")}}
+                  onClick={(e)=>{onClickSubTab("app", e)}}
                 >
                   <span>Le nostre app</span>
                   <svg
@@ -555,7 +574,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="riviste"
                   href="./"
-                  onClick={(e)=>{e.preventDefault(); setSubTab("riviste")}}
+                  onClick={(e)=>{onClickSubTab("riviste", e)}}
                 >
                   <span>Le nostre riviste</span>
                   <svg
@@ -655,7 +674,7 @@ function NavBar() {
         </div>
 
         <div className={`sideBar  ${overlay ? "active" : ""} `}>
-          <a className="sideBarClose" href="./" onClick={(e)=>{e.preventDefault(); setOverlay(!overlay); setTab(""); setSubTab("")}} >
+          <a className="sideBarClose" href="./" onClick={onClickSidebarClose} >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -672,7 +691,7 @@ function NavBar() {
             </svg>
           </a>
         </div>
-        <div className={`navBarOverlay closeSideBar ${overlay ? "active" : false} `} onClick={()=>{setOverlay(!overlay); setTab(""); setSubTab("")}}></div>
+        <div className={`navBarOverlay closeSideBar ${overlay ? "active" : false} `} onClick={onClickSidebarClose}></div>
 
         <ul className="navBar-row2-col3">
           <li>
