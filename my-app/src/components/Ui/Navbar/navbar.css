@@ -65,13 +65,13 @@
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  height: 3, 5rem;
+  height: 5rem;
   padding: 0 0.5rem;
   background-color: white;
   border-bottom: 2px solid var(--lego-yellow);
 }
 
-.navBar .navBarLogo img {
+.navBar .navBarLogo svg {
   width: 2.5rem;
   height: auto;
 }
@@ -225,7 +225,7 @@
     padding: 0 2rem;
     background-color: var(--lego-yellow);
   }
-  .navBar-row2 .navBarLogo img {
+  .navBar-row2 .navBarLogo svg {
     width: 3.5rem;
   }
   .navBar-row2-col1 li:first-child {
