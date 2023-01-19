@@ -7,7 +7,7 @@ import PageHeader from "../../Ui/PageHeader/PageHeader";
 import Quicklinks from "../../Ui/QuickLinks/Quicklinks";
 import Slider from "../../Ui/Slider/Slider";
 import SpotlightCard from "../../Ui/SpotlightCard/SpotlightCard";
-import Navbar from "../../Ui/Navbar/Navbar";
+import Navbar from "../../Ui/Navbar/NavBar";
 import "./home.css";
 
 function Home() {

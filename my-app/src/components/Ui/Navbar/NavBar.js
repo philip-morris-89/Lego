@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 
-function Navbar() {
+function NavBar() {
   return (
     <nav className="navBar">
       <div className="navBar-row1">
@@ -760,4 +760,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;
