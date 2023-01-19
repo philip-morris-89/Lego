@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 
 function NavBar() {
+
+  const [Tab, setTab] = useState("");
+  const [subTab, setSubTab] = useState("");
+  const [overlay, setOverlay] = useState(false)
+
+
   return (
     <nav className="navBar">
       <div className="navBar-row1">
@@ -152,17 +158,20 @@ function NavBar() {
         <div className="navBar-row2-col2">
           <ul className="navBar-menu">
             <li className="navBar-menuItem">
-              <a data-tab="acquista" href="">
+              <a data-tab="acquista" href="" className={`${Tab === "acquista" ? "active" : ""}`}
+                 onClick={(e)=>{e.preventDefault(); setSubTab(""); setTab("acquista"); setOverlay(true)}}>
                 Acquista
               </a>
             </li>
             <li className="navBar-menuItem">
-              <a data-tab="scopri" href="">
+              <a data-tab="scopri" href="" className={`${Tab === "scopri" ? "active" : ""}`}
+                 onClick={(e)=>{e.preventDefault(); setSubTab(""); setTab("scopri"); setOverlay(true)}}>
                 Scopri
               </a>
             </li>
             <li className="navBar-menuItem">
-              <a data-tab="aiuto" href="">
+              <a data-tab="aiuto" href="" className={`${Tab === "aiuto" ? "active" : ""}`}
+                 onClick={(e)=>{e.preventDefault(); setSubTab(""); setTab("aiuto"); setOverlay(true)}}>
                 Aiuto
               </a>
             </li>
@@ -173,13 +182,14 @@ function NavBar() {
             </li>
           </ul>
 
-          <div id="acquista" className="navBar-subMenu-container">
+          <div id="acquista" className={`navBar-subMenu-container ${Tab === "acquista" ? "active" : ""}`}>
             <ul className="navBar-subMenu-left">
               <li>
                 <a
                   className="navBar-subMenu-linkExpand"
                   data-subtab="setPerTema"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("setPerTema")}}
                 >
                   <span>Set per tema</span>
                   <svg
@@ -199,6 +209,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="eta"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("eta")}}
                 >
                   <span>Età</span>
                   <svg
@@ -218,6 +229,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="prezzi"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("prezzi")}}
                 >
                   <span>Prezzi</span>
                   <svg
@@ -237,6 +249,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="merchandising"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("merchandising")}}
                 >
                   <span>Merchandising LEGO</span>
                   <svg
@@ -256,6 +269,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="interessi"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("interessi")}}
                 >
                   <span>Interessi</span>
                   <svg
@@ -275,6 +289,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="pick"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("pick")}}
                 >
                   <span>Pick and Build</span>
                   <svg
@@ -312,7 +327,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="setPerTema">
+            <ul className= {`navBar-subMenu-right ${subTab === "setPerTema" ? "subActive" : ""}`} id="setPerTema">
               <li>
                 <a href="../temi/index.html">Visualizza tutti i temi</a>
               </li>
@@ -354,7 +369,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="eta">
+            <ul className={`navBar-subMenu-right ${subTab === "eta" ? "subActive" : ""}`} id="eta">
               <li>
                 <a href="./">Visualizza tutte le età</a>
               </li>
@@ -378,7 +393,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="prezzi">
+            <ul className={`navBar-subMenu-right ${subTab === "prezzi" ? "subActive" : ""}`}  id="prezzi">
               <li>
                 <a href="./">Visualizza tutti i prezzi</a>
               </li>
@@ -399,7 +414,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="merchandising">
+            <ul className={`navBar-subMenu-right ${subTab === "merchandising" ? "subActive" : ""}`} id="merchandising">
               <li>
                 <a href="./">VISUALIZZA TUTTO IL MERCHANDISING LEGO</a>
               </li>
@@ -435,7 +450,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="interessi">
+            <ul className={`navBar-subMenu-right ${subTab === "interessi" ? "subActive" : ""}`} id="interessi">
               <li>
                 <a href="./">VISUALIZZA TUTTI GLI INTERESSI</a>
               </li>
@@ -477,7 +492,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="pick">
+            <ul className={`navBar-subMenu-right ${subTab === "pick" ? "subActive" : ""}`} id="pick">
               <li>
                 <a href="./">PICK AND BUILD</a>
               </li>
@@ -493,13 +508,14 @@ function NavBar() {
             </ul>
           </div>
 
-          <div id="scopri" className="navBar-subMenu-container">
+          <div id="scopri" className={`navBar-subMenu-container ${Tab === "scopri" ? "active" : ""}`}>
             <ul className="navBar-subMenu-left">
               <li>
                 <a
                   className="navBar-subMenu-linkExpand"
                   data-subtab="valori"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("valori")}}
                 >
                   <span>I nostri valori</span>
                   <svg
@@ -519,6 +535,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="app"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("app")}}
                 >
                   <span>Le nostre app</span>
                   <svg
@@ -538,6 +555,7 @@ function NavBar() {
                   className="navBar-subMenu-linkExpand"
                   data-subtab="riviste"
                   href="./"
+                  onClick={(e)=>{e.preventDefault(); setSubTab("riviste")}}
                 >
                   <span>Le nostre riviste</span>
                   <svg
@@ -581,7 +599,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="valori">
+            <ul className={`navBar-subMenu-right ${subTab === "valori" ? "subActive" : ""}`} id="valori">
               <li>
                 <a href="./">Informazioni su LEGO Group</a>
               </li>
@@ -593,7 +611,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="app">
+            <ul className={`navBar-subMenu-right ${subTab === "app" ? "subActive" : ""}`} id="app">
               <li>
                 <a href="./">LEGO Builder</a>
               </li>
@@ -602,14 +620,14 @@ function NavBar() {
               </li>
             </ul>
 
-            <ul className="navBar-subMenu-right" id="riviste">
+            <ul className={`navBar-subMenu-right ${subTab === "riviste" ? "subActive" : ""}`} id="riviste">
               <li>
                 <a href="./">Cataloghi LEGO</a>
               </li>
             </ul>
           </div>
 
-          <div id="aiuto" className="navBar-subMenu-container">
+          <div id="aiuto" className={`navBar-subMenu-container ${Tab === "aiuto" ? "active" : ""}`}>
             <ul className="navBar-subMenu-left">
               <li>
                 <a href="./">Verifica stato ordine</a>
@@ -636,8 +654,8 @@ function NavBar() {
           </div>
         </div>
 
-        <div className="sideBar">
-          <a className="sideBarClose" href="./">
+        <div className={`sideBar  ${overlay ? "active" : ""} `}>
+          <a className="sideBarClose" href="./" onClick={(e)=>{e.preventDefault(); setOverlay(!overlay); setTab(""); setSubTab("")}} >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -654,7 +672,7 @@ function NavBar() {
             </svg>
           </a>
         </div>
-        <div className="navBarOverlay closeSideBar"></div>
+        <div className={`navBarOverlay closeSideBar ${overlay ? "active" : false} `} onClick={()=>{setOverlay(!overlay); setTab(""); setSubTab("")}}></div>
 
         <ul className="navBar-row2-col3">
           <li>
