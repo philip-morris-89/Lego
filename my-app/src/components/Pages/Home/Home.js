@@ -7,11 +7,13 @@ import PageHeader from "../../Ui/PageHeader/PageHeader";
 import Quicklinks from "../../Ui/QuickLinks/Quicklinks";
 import Slider from "../../Ui/Slider/Slider";
 import SpotlightCard from "../../Ui/SpotlightCard/SpotlightCard";
+import Navbar from "../../Ui/Navbar/Navbar";
 import "./home.css";
 
 function Home() {
   return (
     <div className="home">
+      <Navbar />
       <Banner
         size="large"
         textcolor="black"
