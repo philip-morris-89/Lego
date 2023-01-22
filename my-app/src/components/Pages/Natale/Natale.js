@@ -16,7 +16,7 @@ function Natale() {
   return (
     <div className="natale">
       <Navbar />
-      <div className="background-first">
+      <div className="background-natale">
       <PageHeader text="Regali di Natale LEGO®" btnText1="Prodotti" btnText2="Scopri di più" position="center" />
       <Banner
         size="large"
@@ -76,6 +76,7 @@ function Natale() {
         btnLink1="./"
         btnColor="black"
       />
+      <div className="background-natale">
       <PageHeader text="Le feste sono in arrivo" position="center" size="large" />
       <PageHeader text="Questo è il momento migliore per iniziare a fare shopping per Natale e assicurarsi i regali da non perdere. Qualunque siano i loro interessi, troverai la migliore selezione di set LEGO® per tutte le persone che ami." size="small" position="center"/>
       
@@ -96,6 +97,8 @@ function Natale() {
       <p>Lascia che il nostro Trova Regali di Natale, semplice e veloce, rimuova lo stress delle ricerche...</p>
       <div className="button-container">
       <ButtonCta shape="pill">INIZIA</ButtonCta>
+      </div>
+
       </div>
       <Banner
         size="large"
@@ -121,7 +124,7 @@ function Natale() {
         <InjectProductCard1 />
       </Slider>
       
-      
+      <div className="background-natale-light">
       <PageHeader text="Trova ancora più ispirazione" position="left" size="large" />
       <Slider slides="four">
         <InjectArticles category={5}/>
@@ -131,7 +134,7 @@ function Natale() {
       <Slider slides="four">
         <InjectArticles category={6}/>
       </Slider>
-
+      </div>
       
 
       <Footer />

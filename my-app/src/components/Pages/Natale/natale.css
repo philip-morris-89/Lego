@@ -23,8 +23,11 @@
     align-items: center;
   }
 
-  .background-first{
+  .background-natale{
     background-color: #34a19c;
+  }
+  .background-natale-light{
+    background-color: #CCE7E6;
   }
   @media only screen and (min-width: 426px) {
     .inEvidenza-container {
