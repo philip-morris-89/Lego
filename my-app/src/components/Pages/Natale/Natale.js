@@ -93,11 +93,6 @@ function Natale() {
         <InjectArticles category={4}/>
       </Slider>
       
-      <PageHeader text="Trova il regalo perfetto!" position="center"/>
-      <p>Lascia che il nostro Trova Regali di Natale, semplice e veloce, rimuova lo stress delle ricerche...</p>
-      <div className="button-container">
-      <ButtonCta shape="pill">INIZIA</ButtonCta>
-      </div>
 
       </div>
       <Banner
