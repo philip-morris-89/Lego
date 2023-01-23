@@ -1,3 +1,6 @@
+.signup-page {
+  background-color: #E0E0E0;
+}
 .signup-page .mainwrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
