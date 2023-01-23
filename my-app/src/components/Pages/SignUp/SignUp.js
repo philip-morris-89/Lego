@@ -1,8 +1,8 @@
 import React from "react";
 import "./signup.css";
 import { Link } from "react-router-dom";
-import { Checkbox, FormControlLabel, TextField } from "@mui/material";
-import ButtonCta from "../../Ui/ButtonCta/ButtonCta";
+import { Button, Checkbox, FormControlLabel, TextField } from "@mui/material";
+
 
 
 function SignUp() {
@@ -10,7 +10,7 @@ function SignUp() {
       <div className="signup-page">
         <body>
           <div className="mainwrapper">
-            <div className="gridcolumn-1">A</div>
+            <div className="gridcolumn-1"></div>
             <div className="gridmain">
               <header className="top-logo">
                 <span className="span-empty"></span>
@@ -81,16 +81,17 @@ function SignUp() {
                     <TextField
                       id="outlined-basic"
                       label="Il tuo indirizzo email"
-                      variant="outlined"
+                      variant="filled"
                       placeholder="esempio@dominio.it"
                       type="email"
+                      
                     />
                   </div>
                   <div className="password-wrapper">
                     <TextField
                       id="outlined-basic"
                       label="La tua password"
-                      variant="outlined"
+                      variant="filled"
                       placeholder="* * * * * * * *"
                       type="password"
                     />
@@ -113,14 +114,17 @@ function SignUp() {
                   </div>
 
                   <div className="button-wrapper">
-                    <ButtonCta color="blue" theme="solid" shape="pill">
+                    <Button
+                        variant="contained" 
+                        size="large"
+                        >
                       Avanti
-                    </ButtonCta>
+                    </Button>
                   </div>
                 </form>
               </main>
             </div>
-            <div className="gridcolumn-2">A</div>
+            <div className="gridcolumn-2"></div>
           </div>
         </body>
       </div>
