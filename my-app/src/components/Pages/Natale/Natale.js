@@ -17,51 +17,54 @@ function Natale() {
     <div className="natale">
       <Navbar />
       <div className="background-natale">
-      <PageHeader text="Regali di Natale LEGO®" btnText1="Prodotti" btnText2="Scopri di più" position="center" />
-      <Banner
-        size="large"
-        textcolor="black"
-        backgroundcolor="xmas"
-        position="left"
-        title="Costruisci lo spirito natalizio"
-        paragraph="Diffondi lo spirito natalizio con il nuovo set Natale nella strada principale LEGO®."
-        imgMobile="https://www.lego.com/cdn/cs/set/assets/blt74a0a7ae0c32055e/Holiday-Landing-202212-10308-Hero-Standard-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2"
-        imgTablet="https://www.lego.com/cdn/cs/set/assets/blt133fbb81fb18da99/Holiday-Landing-202212-10308-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3"
-        imgDesktop="https://www.lego.com/cdn/cs/set/assets/bltf6665af9c7337230/Holiday-Landing-202212-10308-Hero-Standard-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
-        btnText1="Compra Ora"
-        btnLink1="./"
-        btnColor="black"
-      />
+        <PageHeader text="Regali di Natale LEGO®" btnText1="Prodotti" btnText2="Scopri di più" position="center" />
+        <Banner
+          size="large"
+          textcolor="black"
+          backgroundcolor="xmas"
+          position="left"
+          title="Costruisci lo spirito natalizio"
+          paragraph="Diffondi lo spirito natalizio con il nuovo set Natale nella strada principale LEGO®."
+          imgMobile="https://www.lego.com/cdn/cs/set/assets/blt74a0a7ae0c32055e/Holiday-Landing-202212-10308-Hero-Standard-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2"
+          imgTablet="https://www.lego.com/cdn/cs/set/assets/blt133fbb81fb18da99/Holiday-Landing-202212-10308-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3"
+          imgDesktop="https://www.lego.com/cdn/cs/set/assets/bltf6665af9c7337230/Holiday-Landing-202212-10308-Hero-Standard-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=3"
+          btnText1="Compra Ora"
+          btnLink1="./"
+          btnColor="black"
+        />
 
-      
-     <Quicklinks />
-      
-      <PageHeader 
-        className="trovastore"
-        
-        text="La data per la consegna entro Natale degli ordini online è trascorsa. Prova in un LEGO® Store vicino a te!"
-        position="center" 
-        size="large" 
-       
+
+        <Quicklinks />
+
+        <PageHeader
+          className="trovastore"
+
+          text="La data per la consegna entro Natale degli ordini online è trascorsa. Prova in un LEGO® Store vicino a te!"
+          position="center"
+          size="large"
+
         />
-      <div className="button-container">
-       <ButtonCta>
-         Trova uno store
-       </ButtonCta>
-       </div>
-      <PageHeader text="Idee regalo popolari" position="left" size="large" />
-      <Slider slides="four">
-        <InjectProductCard2 
-         
-        />
-      </Slider>
+        <div className="button-container">
+          <ButtonCta>
+            Trova uno store
+          </ButtonCta>
+        </div>
+        <PageHeader text="Idee regalo popolari" position="left" size="large" />
+        <Slider slides="four">
+          <InjectProductCard2
+
+          />
+        </Slider>
       </div>
 
       <PageHeader text="Trova altri set che tutti amano" position="left" size="large" />
       <Slider slides="four">
-        <InjectArticles category={3}/>
+        <InjectArticles category={3} />
       </Slider>
-      
+      <br />
+      <br />
+      <br />
+
       <Banner
         size="large"
         textcolor="black"
@@ -77,22 +80,21 @@ function Natale() {
         btnColor="black"
       />
       <div className="background-natale">
-      <PageHeader text="Le feste sono in arrivo" position="center" size="large" />
-      <PageHeader text="Questo è il momento migliore per iniziare a fare shopping per Natale e assicurarsi i regali da non perdere. Qualunque siano i loro interessi, troverai la migliore selezione di set LEGO® per tutte le persone che ami." size="small" position="center"/>
-      
-      
+        <div className="header-feste" >
+          <PageHeader text="Le feste sono in arrivo" position="center" size="large" />
+         <p>Questo è il momento migliore per iniziare a fare shopping per Natale e assicurarsi i regali da non perdere. Qualunque siano i loro interessi, troverai la migliore selezione di set LEGO® per tutte le persone che ami.</p>
+        </div >
+        <br />
+        <PageHeader text="Scopri le idee regalo" position="left" size="large" />
+        <Slider slides="four">
+          <InjectProductCard2 />
+        </Slider>
 
+        <PageHeader text="" position="left" size="large" />
+        <Slider slides="four">
+          <InjectArticles category={4} />
+        </Slider>
 
-      <PageHeader text="Scopri le idee regalo" position="left" size="large" />
-      <Slider slides="four">
-        <InjectProductCard2 />
-      </Slider>
-
-      <PageHeader text="" position="left" size="large" />
-      <Slider slides="four">
-        <InjectArticles category={4}/>
-      </Slider>
-      
 
       </div>
       <Banner
@@ -118,19 +120,22 @@ function Natale() {
       <Slider slides="four">
         <InjectProductCard1 />
       </Slider>
-      
-      <div className="background-natale-light">
-      <PageHeader text="Trova ancora più ispirazione" position="left" size="large" />
-      <Slider slides="four">
-        <InjectArticles category={5}/>
-      </Slider>
+      <br />
+      <br />
+      <br />
 
-      <PageHeader text="" position="left" size="large" />
-      <Slider slides="four">
-        <InjectArticles category={6}/>
-      </Slider>
+      <div className="background-natale-light">
+        <PageHeader text="Trova ancora più ispirazione" position="left" size="large" />
+        <Slider slides="four">
+          <InjectArticles category={5} />
+        </Slider>
+
+        <PageHeader text="" position="left" size="large" />
+        <Slider slides="four">
+          <InjectArticles category={6} />
+        </Slider>
       </div>
-      
+
 
       <Footer />
     </div>

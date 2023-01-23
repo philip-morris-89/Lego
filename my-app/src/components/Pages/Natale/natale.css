@@ -25,9 +25,18 @@
 
   .background-natale{
     background-color: #34a19c;
+    padding-bottom: 3rem;
   }
   .background-natale-light{
     background-color: #CCE7E6;
+  }
+
+  .header-feste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
   }
   @media only screen and (min-width: 426px) {
     .inEvidenza-container {
