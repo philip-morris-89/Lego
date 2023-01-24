@@ -1,0 +1,147 @@
+.signup-page {
+  background: rgb(242, 245, 247);
+  background: linear-gradient(183deg, rgb(242, 245, 247) 0%, rgb(242, 245, 247) 37%, rgb(225, 232, 236) 37%, rgb(225, 232, 236) 100%);
+}
+.signup-page .mainwrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+}
+.signup-page .mainwrapper .gridcolumn-1 {
+  grid-area: 1/1/2/3;
+}
+.signup-page .mainwrapper .gridmain {
+  grid-area: 1/3/2/11;
+}
+.signup-page .mainwrapper .gridcolumn-2 {
+  grid-area: 1/11/2/13;
+}
+@media only screen and (max-width: 500px) {
+  .signup-page .mainwrapper .gridmain {
+    grid-area: 1/2/2/12;
+  }
+  .signup-page .mainwrapper .gridcolumn-1 {
+    display: none;
+  }
+  .signup-page .mainwrapper .gridcolumn-2 {
+    display: none;
+  }
+}
+.signup-page .gridmain {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.signup-page .top-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+.signup-page .top-logo .span-empty {
+  height: 32px;
+  width: 32px;
+}
+.signup-page .top-logo .title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-page .top-logo .title-wrapper svg {
+  height: 32px;
+  width: 32px;
+}
+.signup-page .top-logo .title-wrapper h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 16px;
+}
+.signup-page .top-logo button {
+  height: 32px;
+  width: 32px;
+  background: transparent;
+  padding: 0;
+  color: var(--lego-blue);
+  cursor: pointer;
+}
+.signup-page .top-logo button:hover {
+  color: var(--lego-indigo);
+}
+.signup-page .top-logo button svg {
+  height: 32px;
+  width: 32px;
+}
+.signup-page main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+}
+.signup-page main .avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-page main .avatar-wrapper img {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
+.signup-page main form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.signup-page main form .email-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.signup-page main form .email-wrapper input {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+.signup-page main form .password-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.signup-page main form .password-wrapper input {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+.signup-page main form .checkbox-wrapper label {
+  color: var(--lego-blue);
+}
+.signup-page main form .text-wrapper {
+  padding-left: 35px;
+  margin-bottom: 26px;
+}
+.signup-page main form .text-wrapper p {
+  font-size: small;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+.signup-page main form .button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 50px 0;
+}
+.signup-page main form .button-wrapper button {
+  height: 60px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=signup.css.map */
