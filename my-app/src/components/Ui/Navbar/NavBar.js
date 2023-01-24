@@ -147,7 +147,7 @@ function NavBar() {
             </a>
           </li>
           <li className="navBarLogo">
-            <a href="../home/index.html">
+            <a href="../home">
               {/* <img src="../../assets/images/logo.svg" alt="Logo" /> */}
               <svg
                 className="footer-logo"
@@ -205,7 +205,7 @@ function NavBar() {
               </a>
             </li>
             <li className="navBar-menuItem">
-              <a className="navBarButton" href="./">
+              <a className="navBarButton" href="../natale">
                 Natale
               </a>
             </li>
