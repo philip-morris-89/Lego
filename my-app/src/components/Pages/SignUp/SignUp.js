@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signup.css";
 import { Link } from "react-router-dom";
 import { Button, Checkbox, FormControlLabel, TextField } from "@mui/material";
@@ -6,6 +6,24 @@ import { Button, Checkbox, FormControlLabel, TextField } from "@mui/material";
 
 
 function SignUp() {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [checked, setChecked] = useState(false);
+
+  const handleChangeEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleChangePassword = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleChangeCheckbox = (event) => {
+    setChecked(event.target.checked);
+  };
+
+
     return (
       <div className="signup-page">
         <body>
@@ -84,7 +102,9 @@ function SignUp() {
                       variant="filled"
                       placeholder="esempio@dominio.it"
                       type="email"
-                      
+                      value={email}
+                      onChange={handleChangeEmail}
+                      required
                     />
                   </div>
                   <div className="password-wrapper">
@@ -94,6 +114,9 @@ function SignUp() {
                       variant="filled"
                       placeholder="* * * * * * * *"
                       type="password"
+                      value={password}
+                      onChange={handleChangePassword}
+                      required
                     />
                   </div>
 
@@ -101,6 +124,8 @@ function SignUp() {
                     <FormControlLabel
                       control={<Checkbox size="medium" />}
                       label="Accetto i termini e le condizioni"
+                      value={checked}
+                      onChange={handleChangeCheckbox}
                     />
                   </div>
                   <div className="text-wrapper">
@@ -117,6 +142,7 @@ function SignUp() {
                     <Button
                         variant="contained" 
                         size="large"
+                        disabled= {!email || !password || !checked}
                         >
                       Avanti
                     </Button>
