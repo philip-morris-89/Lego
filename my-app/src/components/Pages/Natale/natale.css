@@ -1,0 +1,58 @@
+.natale {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quickLinks {
+    margin-top: 4rem;
+  }
+  
+  .inEvidenza-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  
+  .inEvidenza-container li {
+    padding: 0.5rem;
+  }
+   
+  .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background-natale{
+    background-color: #34a19c;
+    padding-bottom: 3rem;
+  }
+  .background-natale-light{
+    background-color: #CCE7E6;
+  }
+
+  .header-feste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+  }
+  .footer {
+    margin-top: 0;
+  }
+  @media only screen and (min-width: 426px) {
+    .inEvidenza-container {
+      flex-direction: row;
+      padding: 0;
+    }
+  
+    .inEvidenza-container li {
+      padding: 0;
+    }
+  
+    .inEvidenza-container li:first-child {
+      padding-right: 2rem;
+    }
+  }
+  

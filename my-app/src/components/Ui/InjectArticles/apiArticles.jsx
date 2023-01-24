@@ -141,6 +141,302 @@ let apiArticles = [
       url: "./",
     },
   ],
+  [
+    // Trova altri set che tutti amano
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt7c698072345cd2f0/Holiday-Home-76405-202211-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:
+        "https://www.lego.com/cdn/cs/set/assets/bltd049ed56939d8ac2/harrypotter_logo_gold_divider-600w.png?format=png&height=60&dpr=1",
+      title: "Regali per gli appassionati di Harry Potter™",
+      description:
+        "Ricrea la magia con il set Hogwarts Express™ - Edizione del collezionista.",
+      link: "Compra ora",
+      url: "./",
+      position:"right",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt20bac62414c9d467/Holiday2022-Landing-202208-21333-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/blt7bba58dafa073077/ideas_logo_pos_300w.png?format=png&height=60&dpr=1",  
+      title: "Regali per gli appassionati d'arte",
+      description:
+        "Dona un capolavoro con il set Vincent van Gogh - Notte stellata LEGO® Ideas.",
+      link: "Compra ora",
+      url: "./",
+      position:"left",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltbd43f6c2c13f8632/Holiday-Home-75331-202211-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=1",  
+      title: "Regali per gli appassionati di The Mandalorian™",
+      description:
+        "Portati a casa la galassia con il più grande set Razor Crest™ LEGO® mai realizzato.",
+      link: "Compra ora",
+      url: "./",
+      position:"right",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt6f13fe1113855036/Holiday2022-Landing-202208-Sku6-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/blt19ded43a8a1cedda/creator3in1_logo_pos_300w.png?format=png&height=60&dpr=1",  
+      title: "Più set Creator 3in1 di chiunque altro",
+      description:
+        "Trova la migliore selezione di set LEGO® Creator 3in1 proprio qui.",
+      link: "Compra ora",
+      url: "./",
+      position:"left",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt7bd8fbf8e55f4ea1/Holiday2022-Landing-202208-71774-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/bltab67d30442866ef8/ninjago-logo-pos_2021-300w.png?format=png&height=60&dpr=1",  
+      title: "Regali per gli appassionati di NINJAGO®",
+      description:
+        "Dai vita a incredibili avventure con il set Ultra drago d'oro di Lloyd.",
+      link: "Compra ora",
+      url: "./",
+      position:"left",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltcd1f7130296258c6/Holiday2022-Landing-202208-Sku4-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/bltdd6b66442cdf429f/city_logo_pos_300w.png?format=png&height=60&dpr=1",  
+      title: "Nessuno ha più set City",
+      description:
+        "Trova la migliore selezione di set LEGO® City proprio qui.",
+      link: "Compra ora",
+      url: "./",
+      position:"left",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt2298bb34afd562b7/Holiday2022-Landing-202208-Sku2-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/blt78da534489771dca/friends_logo_300w.png?format=png&height=60&dpr=1",  
+      title: "Guarda chi ha più set Friends",
+      description:
+        "Trova la migliore selezione di set LEGO® Friends proprio qui.",
+      link: "Compra ora",
+      url: "./",
+      position:"left",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltcb54ae72a1e97623/Holiday2022-Landing-202208-Sku3-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/blte3f32f97d9b0bfe9/speedChampions_logo_white-600w.png?format=png&height=60&dpr=1",  
+      title: "Ancora più set Speed Champions",
+      description:
+        "Trova la migliore selezione di set LEGO® Speed Champions proprio qui.",
+      link: "Compra ora",
+      url: "./",
+      position:"left",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt8edd4f2644b433b9/Holiday2022-Landing-202208-Sku5-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/bltc883ecc873e628a9/DOTS-2021-D-logo-pos-300w.png?format=png&height=60&dpr=1",  
+      title: "Sempre più set DOTS",
+      description:
+        "Trova la migliore selezione di set LEGO® DOTS proprio qui.",
+      link: "Compra ora",
+      url: "./",
+      position:"left",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt5bba78011214487d/Holiday-Home-5007617-202211-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Non solo mattoncini",
+      description:
+        "Esplora le idee regalo perfette per ogni appassionato LEGO®.",
+      link: "Compra ora",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt0e9073bbe4467926/Holiday2022-Landing-202210-Sku9-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:"https://www.lego.com/cdn/cs/set/assets/blt567dff91fc1862aa/education_logo_pos_300w.png?format=png&height=60&dpr=1",  
+      title: "Impara e costruisci, costruisci e impara",
+      description:
+        "Trova una selezione di prodotti LEGO® Education.",
+      link: "Compra ora",
+      url: "./",
+      position:"left",
+    }
+  ],
+  [
+    // 
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltc84ab0b2762a8e80/Holiday2022-Landing-202208-Engage6-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Trova sconti e molto altro nel Centro premi VIP",
+      description:
+        "",
+      link: "Esplora",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltb84cd2ce52471e75/Holiday-Home-BTG-202211-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      logo1:
+        "https://www.lego.com/cdn/cs/set/assets/blt5fccba879ba76cc9/RTW_logo_neg_300w.png?format=png&height=60&dpr=1",
+      title: "Costruisci un regalo. Fai un regalo.",
+      description:
+        "",
+      link: "Scopri",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt6098a1df8b92fe5c/Holiday2022-Landing-202208-Engage9-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Esplora altri set e idee regalo LEGO®",
+      description:
+        "",
+      link: "Compra ora",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt13a495615e3083be/Holiday2022-Landing-202208-Engage10-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Cerchi un pezzo speciale? Prova Pick a Brick",
+      description:
+        "",
+      link: "Compra ora",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt744d2f9ed30a3f3a/Holiday-Landing-202209-Engage11-Block-Standard.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Scopri il divertimento delle costruzioni con LEGO® Life!",
+      description:
+        "",
+      link: "Scopri di più",
+      url: "./",
+    },
+  ],
+  [
+    // Trova ancora più ispirazione
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt15d091432378ac80/Holidays_22_space_OGimage.jpg.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I 12 migliori giocattoli spaziali per Natale",
+      description:
+        "Devi fare un regalo per un fan dello spazio questo Natale? Leggi allora questa lista di regali di Natale, davvero intergalattica!",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt200134f7478b498a/Hero.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Come decorare la casa per il Natale con i mattoncini LEGO",
+      description:
+        "Cercate idee per le decorazioni natalizie? Abbiamo pensato ai modi migliori per decorare casa vostra per le feste...",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltc31c525ecdf7cb7f/Holidays_22_Vehicles_OGimage.jpg.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I 14 migliori giocattoli con veicoli per Natale",
+      description:
+        "Cerchi il dono di Natale perfetto che regali un brivido a un appassionato di veicoli? Questo elenco dei migliori 14 set di veicoli giocattolo ha qualcosa per ogni fascia d’età!",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt80b64faade2e3b30/Holidays_22_SuperMario_banner_C.jpg.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Gli 8 migliori giocattoli LEGO® Super Mario™ per Natale",
+      description:
+        "Questi otto set LEGO® Super Mario™ hanno tutto ciò che serve per un’avventura ricca di divertimento questo Natale! Trovate qui i regali per i fan bambini e adulti...",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltc0fa2d9a88eb4d0f/Holidays_22_Starwars_OGimage.jpg.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I 13 migliori giocattoli LEGO® Star Wars™ di Natale",
+      description:
+        "Porta la magia di Star Wars™ da una galassia lontana lontana a casa tua questo Natale con i migliori 13 giocattoli LEGO® Star Wars di tutti i tuoi film preferiti.",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt7fa78580cff4256b/Holidays_22_SuperHeroes_OGimage.jpg.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I migliori 10 giocattoli da Supereroe LEGO® per Natale",
+      description:
+        "Questi dieci giocattoli dei supereroi sono tutto ciò di cui hai bisogno per un Natale ricco di azione quest’anno, perfetti per i fan della Marvel e gli appassionati di set LEGO® di tutte le età!",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltb8e8cd83ea60b647/Holidays_22_Mincraft_banner_C.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Gli 8 migliori giocattoli LEGO® Minecraft® per Natale",
+      description:
+        "Questo Natale, porta il gaming fuori dagli schemi con questi 8 giocattoli Minecraft® ricchi di azione per i giocatori con una grande immaginazione. Fai attenzione a quel Creeper™!",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blta242de53ff186331/Holidays_22_Harry_Potter_OGimage.jpg.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I migliori 11 set LEGO® Harry Potter™ per Natale",
+      description:
+        "Visita il magico mondo di Harry Potter™ questo Natale e diffondi la magia con gli 11 migliori set LEGO® Harry Potter natalizi.",
+      link: "Leggi di più",
+      url: "./",
+    },
+  ],
+  [
+    // 
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blte07c967269cf5e68/Hero_Banner_-_Mobile.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "Le migliori piccole idee regalo per Natale",
+      description:
+        "Il Natale non deve necessariamente comportare grandi spese! Esplora la nostra selezione delle migliori piccole idee regalo per Natale LEGO® per trovare il dono perfetto da mettere sotto l'albero.",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltb487aef00b923d83/Hero_Banner_-_Mobile.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I migliori regali di Natale per gli adolescenti e i giovani adulti",
+      description:
+        "Gli adolescenti e i giovani adulti possono essere difficili da accontentare a Natale. Rendi tutto più semplice con la nostra lista di set LEGO®!",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt6c92d267f9ead9b7/Hero_Banner_-_Mobile.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I migliori giocattoli natalizi per i bambini",
+      description:
+        "Sei alla ricerca di giocattoli natalizi speciali per i bambini? Fai felici i bambini con ogni tipo di interessi con la nostra lista dei migliori giocattoli natalizi per i bambini!",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/bltdc0b24b7d80efe03/Hero_Banner_-_Mobile.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I migliori regali di Natale per i papà",
+      description:
+        "Mostra a tuo padre quanto tieni a lui con questi suggerimenti sui regali di Natale LEGO® per i papà! Dagli eroi Marvel alle auto, qui troverai sicuramente qualcosa che amerà.",
+      link: "Leggi di più",
+      url: "./",
+    },
+    {
+      image:
+        "https://www.lego.com/cdn/cs/set/assets/blt52d3e8fe966d655a/Hero_Banner_-_Mobile.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      title: "I migliori regali di Natale per le mamme",
+      description:
+        "Una mamma merita il meglio: trova un regalo che apprezzerà sicuramente con questo elenco dei migliori regali di Natale LEGO® per le mamme.",
+      link: "Leggi di più",
+      url: "./",
+    },
+  ]
 ];
 
 export default apiArticles;
