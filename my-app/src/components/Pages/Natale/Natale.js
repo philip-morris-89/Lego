@@ -11,13 +11,17 @@ import ButtonCta from "../../Ui/ButtonCta/ButtonCta";
 import InjectProductCard1 from "../../Ui/InjectProduct/InjectProduct";
 import Quicklinks from "./QuickLinks/Quicklinks";
 
-
 function Natale() {
   return (
     <div className="natale">
       <Navbar />
       <div className="background-natale">
-        <PageHeader text="Regali di Natale LEGO®" btnText1="Prodotti" btnText2="Scopri di più" position="center" />
+        <PageHeader
+          text="Regali di Natale LEGO®"
+          btnText1="Prodotti"
+          btnText2="Scopri di più"
+          position="center"
+        />
         <Banner
           size="large"
           textcolor="black"
@@ -33,37 +37,39 @@ function Natale() {
           btnColor="black"
         />
 
-
         <Quicklinks />
 
-        <PageHeader
+        {/* <PageHeader
           className="trovastore"
-
           text="La data per la consegna entro Natale degli ordini online è trascorsa. Prova in un LEGO® Store vicino a te!"
           position="center"
           size="large"
-
         />
         <div className="button-container">
-          <ButtonCta>
-            Trova uno store
-          </ButtonCta>
-        </div>
-        <PageHeader text="Idee regalo popolari" position="left" size="large" />
-        <Slider slides="four">
-          <InjectProductCard2
-
+          <ButtonCta>Trova uno store</ButtonCta>
+        </div> */}
+        <div className="ideeRegalo">
+          <PageHeader
+            text="Idee regalo popolari"
+            position="left"
+            size="large"
           />
-        </Slider>
+          <Slider slides="four">
+            <InjectProductCard2 />
+          </Slider>
+        </div>
       </div>
 
-      <PageHeader text="Trova altri set che tutti amano" position="left" size="large" />
-      <Slider slides="four">
-        <InjectArticles category={3} />
-      </Slider>
-      <br />
-      <br />
-      <br />
+      <div className="setAmati">
+        <PageHeader
+          text="Trova altri set che tutti amano"
+          position="left"
+          size="large"
+        />
+        <Slider slides="four">
+          <InjectArticles category={3} />
+        </Slider>
+      </div>
 
       <Banner
         size="large"
@@ -80,22 +86,29 @@ function Natale() {
         btnColor="black"
       />
       <div className="background-natale">
-        <div className="header-feste" >
-          <PageHeader text="Le feste sono in arrivo" position="center" size="large" />
-         <p>Questo è il momento migliore per iniziare a fare shopping per Natale e assicurarsi i regali da non perdere. Qualunque siano i loro interessi, troverai la migliore selezione di set LEGO® per tutte le persone che ami.</p>
-        </div >
-        <br />
+        {/* <div className="header-feste">
+          <PageHeader
+            text="Le feste sono in arrivo"
+            position="center"
+            size="large"
+          />
+          <p>
+            Questo è il momento migliore per iniziare a fare shopping per Natale
+            e assicurarsi i regali da non perdere.
+            <br />
+            Qualunque siano i loro interessi, troverai la migliore selezione di
+            set LEGO® per tutte le persone che ami.
+          </p>
+        </div> */}
         <PageHeader text="Scopri le idee regalo" position="left" size="large" />
         <Slider slides="four">
           <InjectProductCard2 />
         </Slider>
-
-        <PageHeader text="" position="left" size="large" />
-        <Slider slides="four">
-          <InjectArticles category={4} />
-        </Slider>
-
-
+        <div className="sectionCustom1">
+          <Slider slides="four">
+            <InjectArticles category={4} />
+          </Slider>
+        </div>
       </div>
       <Banner
         size="large"
@@ -125,20 +138,21 @@ function Natale() {
       <br />
 
       <div className="background-natale-light">
-        <PageHeader text="Trova ancora più ispirazione" position="left" size="large" />
+        <PageHeader
+          text="Trova ancora più ispirazione"
+          position="left"
+          size="large"
+        />
         <Slider slides="four">
           <InjectArticles category={5} />
         </Slider>
-
-        <PageHeader text="" position="left" size="large" />
-        <Slider slides="four">
-          <InjectArticles category={6} />
-        </Slider>
-        <br />
-        <br />
-        <br />
+        <div className="sectionCustom2">
+          <PageHeader text="" position="left" size="large" />
+          <Slider slides="four">
+            <InjectArticles category={6} />
+          </Slider>
+        </div>
       </div>
-
 
       <Footer />
     </div>
