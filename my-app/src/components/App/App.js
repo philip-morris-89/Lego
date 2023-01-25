@@ -8,6 +8,8 @@ import SpotlightCard from "../Ui/SpotlightCard/SpotlightCard";
 import "./App.css";
 import Sliders from "../Pages/Sliders/Sliders";
 import Articles from "../Pages/Articles/Articles";
+import ModalFromHeart from "../Ui/Modal/Modal";
+import NavBar from "../Ui/Navbar/NavBar";
 
 function App() {
   return (
@@ -21,6 +23,10 @@ function App() {
         <Route path="/spotlightcard" element={<SpotlightCard />} />
         <Route path="/sliders" element={<Sliders />} />
         <Route path="/articles" element={<Articles />} />
+        <Route path="/modal" element={<ModalFromHeart/>} />
+        <Route path="/navbar" element={<NavBar/>} />
+        
+
       </Routes>
     </div>
   );

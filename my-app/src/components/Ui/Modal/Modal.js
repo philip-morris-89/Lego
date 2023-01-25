@@ -13,6 +13,7 @@ import {
   import styled from "@emotion/styled";
   import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
   import CloseIcon from "@mui/icons-material/Close";
+  import NavBar from "../Navbar/NavBar";
   
   const StyledModal = styled(Modal)({
     display: "flex",
@@ -38,6 +39,8 @@ import {
     const handleMouseLeave = () => {
       setIsHovering(false);
     };
+
+    
   
     return (
       <>
@@ -128,4 +131,3 @@ import {
       </>
     );
   }
-  

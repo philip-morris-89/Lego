@@ -1,10 +1,22 @@
 import React, { useState } from "react";
+import ModalFromHeart from "../Modal/Modal";
 import "./navbar.css";
+import {
+  Avatar,
+  Box,
+  Button,
+  ButtonGroup,
+  Link,
+  Modal,
+  Tooltip,
+  Typography
+} from "@mui/material";
 
 function NavBar() {
   const [Tab, setTab] = useState("");
   const [subTab, setSubTab] = useState("");
   const [overlay, setOverlay] = useState(false);
+  const [openModal, setOpenModal] = useState(false); //modal
 
   const onClickTab = (tab, e) => {
     e.preventDefault();
@@ -850,8 +862,12 @@ function NavBar() {
             </a>
           </li>
           <li>
-            <a href="./" className="navBar-actionLink">
-              <svg
+            <a className="navBar-actionLink">
+            <>
+            <Link onClick={() => setOpenModal(true)}></Link>
+            <ModalFromHeart open={openModal} setOpen={setOpenModal} />
+             </>
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="18"
@@ -864,7 +880,7 @@ function NavBar() {
                   fill="currentColor"
                   fill-rule="evenodd"
                 ></path>
-              </svg>
+              </svg> */}
             </a>
           </li>
           <li>
