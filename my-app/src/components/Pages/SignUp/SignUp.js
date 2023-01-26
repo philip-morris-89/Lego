@@ -23,6 +23,28 @@ function SignUp() {
     setChecked(event.target.checked);
   };
 
+  const addNewUser = async (event)=> {
+   event.preventDefault()
+
+   const data = {
+    email: email,
+    password: password
+   }
+   const formDataJsonString = JSON.stringify(data)
+   const url = "http://localhost:3001/signup"
+   const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: formDataJsonString
+   })
+
+   const user = await response.json()
+   console.dir(user)
+
+  }
+
 
     return (
       <div className="signup-page">
@@ -94,7 +116,7 @@ function SignUp() {
                     alt="omino lego al pc"
                   />
                 </div>
-                <form>
+                <form action="http://localhost:3001/signup" onSubmit={addNewUser} >
                   <div className="email-wrapper">
                     <TextField
                       id="outlined-basic"
@@ -143,6 +165,7 @@ function SignUp() {
                         variant="contained" 
                         size="large"
                         disabled= {!email || !password || !checked}
+                        type="submit"
                         >
                       Avanti
                     </Button>
