@@ -1,0 +1,179 @@
+
+.login-page{
+    // background-color: var(--blue-grey-100);
+    background: rgb(242,245,247);
+    background: linear-gradient(182deg, rgba(242,245,247,1) 0%, rgba(242,245,247,1) 28%, rgba(225,232,236,1) 28%, rgba(225,232,236,1) 100%);      
+    .mainwrapper{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 16px;
+        grid-row-gap: 0px;
+        .gridcolumn-1{
+            grid-area: 1 / 1 / 2 / 3; 
+        }
+        .gridmain{
+            grid-area: 1 / 3 / 2 / 11; 
+        }
+        .gridcolumn-2{
+            grid-area: 1 / 11 / 2 / 13; 
+        }
+        @media only screen and (max-width: 500px) {
+            .gridmain{
+                grid-area: 1 / 2 / 2 / 12;
+            }
+            .gridcolumn-1{
+                display: none; 
+            }
+            .gridcolumn-2{
+                display: none; 
+            }
+        }
+    }
+
+    
+
+    .gridmain{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+    
+    .top-logo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 140px;
+        .span-empty{
+            height: 32px ;
+            width: 32px;
+        }
+        .title-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                height: 32px;
+                width: 32px;
+            }
+            h2{
+                font-weight: bold;
+                font-size: 24px;
+                margin-left: 16px
+            }
+        }
+        button{
+            height: 32px;
+            width: 32px;
+            background: transparent;
+            padding: 0;
+            color: var(--lego-blue);
+            cursor: pointer;
+            &:hover{
+                color: var(--lego-indigo);
+            }
+            svg{
+                height: 32px;
+                width: 32px;
+                
+            }
+        }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 0 auto;
+        
+        width: 100%;
+        max-width: 500px;
+        .avatar-wrapper{
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 78px;
+                width: 78px;
+                max-width: 300px;
+                background-color: white;
+                border: 1px solid  rgba(225,232,236,1);
+                border-radius: 50px;
+            }
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+
+            .email-wrapper{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+                border: 2px solid #c9c9c9;
+                border-radius: 4px;
+                
+                input{
+                    background-color: white ;
+                    border-radius: 4px;
+
+                                        
+                }
+            }
+            .password-wrapper{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+                border: 2px solid #c9c9c9;
+                border-radius: 4px;
+                
+                input{
+                    background-color: white ;
+                    border-radius: 4px;
+                }
+            }
+        
+
+            .checkbox-wrapper{
+                label{
+                    color: var(--lego-blue);
+                }
+            }
+            .text-wrapper{
+                padding-left: 35px;
+                margin-bottom: 26px;
+                p{
+                    font-size: small;
+                    letter-spacing: 0.3px;
+                    line-height: 1.4;
+                    color: #707070;
+                    text-align: center;
+                }
+            }
+            .button-wrapper{
+                display: flex;
+                justify-content: center;
+                margin: 15px 0 50px 0;
+                button{
+                    height: 60px;
+                    width: 100%;
+                    max-width: 300px;
+                    border-radius: 30px;
+                    font-size: 20px;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+
+
+
