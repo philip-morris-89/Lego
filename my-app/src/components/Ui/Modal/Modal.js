@@ -5,13 +5,11 @@ import {
     ButtonGroup,
     Link,
     Modal,
-    Tooltip,
     Typography
   } from "@mui/material";
   import React, { useState } from "react";
   
   import styled from "@emotion/styled";
-  import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
   import CloseIcon from "@mui/icons-material/Close";
   
   const StyledModal = styled(Modal)({
@@ -28,7 +26,7 @@ import {
   });
   
   export default function ModalFromHeart() {
-    const [open, setOpen] = useState(false);
+    
     const [isHovering, setIsHovering] = useState(false);
   
     const handleMouseEnter = () => {
@@ -38,18 +36,12 @@ import {
     const handleMouseLeave = () => {
       setIsHovering(false);
     };
+
+    
   
     return (
       <>
-        <Tooltip onClick={(e) => setOpen(true)}>
-          <FavoriteBorderRoundedIcon
-            sx={{
-              cursor: "pointer",
-              width: 40
-            }}
-          />
-        </Tooltip>
-        <StyledModal open={open} onClose={(e) => setOpen(false)}>
+        <StyledModal open={false} >
           <Box
             width={500}
             height={360}
@@ -71,7 +63,6 @@ import {
               </Typography>
               <CloseIcon
                 style={{ cursor: "pointer" }}
-                onClick={(e) => setOpen(false)}
               />
             </Box>
   
@@ -128,4 +119,3 @@ import {
       </>
     );
   }
-  
