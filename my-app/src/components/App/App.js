@@ -10,6 +10,8 @@ import Sliders from "../Pages/Sliders/Sliders";
 import Articles from "../Pages/Articles/Articles";
 import ModalFromHeart from "../Ui/Modal/Modal";
 import NavBar from "../Ui/Navbar/NavBar";
+import Natale from "../Pages/Natale/Natale";
+import SignUp from "../Pages/SignUp/SignUp";
 
 function App() {
   return (
@@ -17,16 +19,17 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/natale" element={<Natale />} />
         <Route path="/designsystemlibrary" element={<DesignSystemLibrary />} />
         <Route path="/banners" element={<Banners />} />
         <Route path="/headers" element={<Headers />} />
         <Route path="/spotlightcard" element={<SpotlightCard />} />
         <Route path="/sliders" element={<Sliders />} />
+        <Route path="/articles" element={<Articles />} /> 
         <Route path="/articles" element={<Articles />} />
         <Route path="/modal" element={<ModalFromHeart/>} />
         <Route path="/navbar" element={<NavBar/>} />
-        
-
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </div>
   );
