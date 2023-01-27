@@ -41,8 +41,12 @@ function SignUp() {
    })
 
    const user = await response.json()
-   console.dir(user)
+   alert(user.message[0].msg ? user.message[0].msg : user.message)
 
+   setEmail("")
+   setPassword("")
+   setChecked(false)
+   
   }
 
 
@@ -146,8 +150,9 @@ function SignUp() {
                     <FormControlLabel
                       control={<Checkbox size="medium" />}
                       label="Accetto i termini e le condizioni"
-                      value={checked}
+                      checked={checked}
                       onChange={handleChangeCheckbox}
+                      
                     />
                   </div>
                   <div className="text-wrapper">
