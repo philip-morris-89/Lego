@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 import { Link } from "react-router-dom";
 import { Button, Checkbox, FormControlLabel, TextField } from "@mui/material";
 import prova from "./prova.svg";
 
 function Login() {
+
+  const navigate = useNavigate()
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [checked, setChecked] = useState(false);
@@ -20,6 +24,26 @@ function Login() {
   const handleChangeCheckbox = (event) => {
     setChecked(event.target.checked);
   };
+
+  const onLogin = async (event) => {
+    event.preventDefault();
+    const response = await fetch('http://localhost:3001/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    });
+    const json = await response.json();
+    console.log(json);
+    
+    alert(json.error ? json.error : json.message);
+
+    if(response.status === 200){
+      navigate("/home")
+    }
+  };
+  
 
   return (
     <div className="login-page">
@@ -88,7 +112,7 @@ function Login() {
               <div className="avatar-wrapper">
                 <img src={prova} alt="omino lego al pc" />
               </div>
-              <form>
+              <form onSubmit={onLogin}>
                 <div className="email-wrapper">
                   <TextField
                     id="outlined-basic"
