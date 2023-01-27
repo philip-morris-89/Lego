@@ -1,16 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
-import {
-  Avatar,
-  Box,
-  Button,
-  ButtonGroup,
-  Link,
-  Modal,
-  Typography,
-} from "@mui/material";
+import { Avatar, Box, Modal, Typography } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import styled from "@emotion/styled";
+import ButtonCta from "../ButtonCta/ButtonCta";
 
 const StyledModal = styled(Modal)({
   display: "flex",
@@ -50,15 +44,6 @@ function NavBar() {
   };
 
   const [openModal, setOpenModal] = useState(false);
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
 
   return (
     <>
@@ -103,27 +88,7 @@ function NavBar() {
             </Typography>
           </UserBox>
 
-          <ButtonGroup
-            color="secondary"
-            fullWidth
-            variant="contained"
-            aria-label="outlined primary button group"
-          >
-            <Button
-              color="primary"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              variant="contained"
-              sx={{ height: "50px", cursor: "pointer" }}
-              style={{
-                backgroundColor: isHovering ? "white" : "",
-                color: isHovering ? "black" : "",
-                border: "1px #0288d1 solid",
-              }}
-            >
-              Accedi
-            </Button>
-          </ButtonGroup>
+          <ButtonCta link="/login">Accedi</ButtonCta>
           <Box padding={1} paddingTop={2}>
             <Typography lineHeight={1.5} variant="span" fontWeight={500}>
               Per creare e consultare un lista dei desideri, accedi al tuo
@@ -134,11 +99,7 @@ function NavBar() {
             <Typography variant="span" fontWeight={400}>
               Non hai un account?
             </Typography>
-            <span>
-              <Link style={{ cursor: "pointer", textDecoration: "none" }}>
-                Registrati
-              </Link>
-            </span>
+            <Link to="/signup">Registrati</Link>
           </Box>
         </Box>
       </StyledModal>
@@ -303,7 +264,6 @@ function NavBar() {
               <li className="navBar-menuItem">
                 <a
                   data-tab="acquista"
-                  href=""
                   className={`${Tab === "acquista" ? "active" : ""}`}
                   onClick={(e) => onClickTab("acquista", e)}
                 >
@@ -313,7 +273,6 @@ function NavBar() {
               <li className="navBar-menuItem">
                 <a
                   data-tab="scopri"
-                  href=""
                   className={`${Tab === "scopri" ? "active" : ""}`}
                   onClick={(e) => onClickTab("scopri", e)}
                 >
@@ -323,7 +282,6 @@ function NavBar() {
               <li className="navBar-menuItem">
                 <a
                   data-tab="aiuto"
-                  href=""
                   className={`${Tab === "aiuto" ? "active" : ""}`}
                   onClick={(e) => onClickTab("aiuto", e)}
                 >

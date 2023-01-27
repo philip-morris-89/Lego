@@ -25,10 +25,10 @@ function App() {
         <Route path="/headers" element={<Headers />} />
         <Route path="/spotlightcard" element={<SpotlightCard />} />
         <Route path="/sliders" element={<Sliders />} />
-        <Route path="/articles" element={<Articles />} /> 
         <Route path="/articles" element={<Articles />} />
-        <Route path="/modal" element={<ModalFromHeart/>} />
-        <Route path="/navbar" element={<NavBar/>} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/modal" element={<ModalFromHeart />} />
+        <Route path="/navbar" element={<NavBar />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
     </div>
