@@ -12,6 +12,7 @@ import ModalFromHeart from "../Ui/Modal/Modal";
 import NavBar from "../Ui/Navbar/NavBar";
 import Natale from "../Pages/Natale/Natale";
 import SignUp from "../Pages/SignUp/SignUp";
+import Login from "../Pages/Login/Login";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/modal" element={<ModalFromHeart />} />
         <Route path="/navbar" element={<NavBar />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );

@@ -166,7 +166,7 @@ function SignUp() {
                     disabled={!email || !password || !checked}
                     type="submit"
                   >
-                    Avanti
+                    Registrati
                   </Button>
                 </div>
               </form>
