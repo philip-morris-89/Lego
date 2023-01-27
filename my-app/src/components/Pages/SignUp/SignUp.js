@@ -23,6 +23,32 @@ function SignUp() {
     setChecked(event.target.checked);
   };
 
+  const addNewUser = async (event)=> {
+   event.preventDefault()
+
+   const data = {
+    email: email,
+    password: password
+   }
+   const formDataJsonString = JSON.stringify(data)
+   const url = "http://localhost:3001/signup"
+   const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: formDataJsonString
+   })
+
+   const user = await response.json()
+   alert(user.message[0].msg ? user.message[0].msg : user.message)
+
+   setEmail("")
+   setPassword("")
+   setChecked(false)
+   
+  }
+
 
     return (
       <div className="signup-page">
@@ -94,7 +120,7 @@ function SignUp() {
                     alt="omino lego al pc"
                   />
                 </div>
-                <form>
+                <form action="http://localhost:3001/signup" onSubmit={addNewUser} >
                   <div className="email-wrapper">
                     <TextField
                       id="outlined-basic"
@@ -124,8 +150,9 @@ function SignUp() {
                     <FormControlLabel
                       control={<Checkbox size="medium" />}
                       label="Accetto i termini e le condizioni"
-                      value={checked}
+                      checked={checked}
                       onChange={handleChangeCheckbox}
+                      
                     />
                   </div>
                   <div className="text-wrapper">
@@ -143,6 +170,7 @@ function SignUp() {
                         variant="contained" 
                         size="large"
                         disabled= {!email || !password || !checked}
+                        type="submit"
                         >
                       Avanti
                     </Button>
