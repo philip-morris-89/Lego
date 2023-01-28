@@ -24,6 +24,8 @@ function NavBar() {
   const [subTab, setSubTab] = useState("");
   const [overlay, setOverlay] = useState(false);
 
+  const [openModal, setOpenModal] = useState(false);
+
   const onClickTab = (tab, e) => {
     e.preventDefault();
     setSubTab("");
@@ -43,7 +45,12 @@ function NavBar() {
     setSubTab("");
   };
 
-  const [openModal, setOpenModal] = useState(false);
+  const storedUser = JSON.parse(localStorage.getItem("user"));
+
+  const onLogout = () => {
+    localStorage.removeItem("user");
+    window.location.reload()
+  }
 
   return (
     <>
@@ -210,8 +217,9 @@ function NavBar() {
                     ></path>
                   </g>
                 </svg>
-                Account
+                {storedUser ? `Account ${storedUser}` : "Account"}
               </a>
+              {storedUser && <a onClick={onLogout}>LogOut</a>}
             </li>
             <li>
               <a href="./" className="navBar-account-vip">
@@ -297,9 +305,7 @@ function NavBar() {
 
             <div
               id="acquista"
-              className={`navBar-subMenu-container ${
-                Tab === "acquista" ? "active" : ""
-              }`}
+              className={`navBar-subMenu-container ${Tab === "acquista" ? "active" : "" }`}
             >
               <ul className="navBar-subMenu-left">
                 <li>
@@ -458,9 +464,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "setPerTema" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "setPerTema" ? "subActive" : "" }`}
                 id="setPerTema"
               >
                 <li>
@@ -505,9 +509,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "eta" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "eta" ? "subActive" : "" }`}
                 id="eta"
               >
                 <li>
@@ -534,9 +536,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "prezzi" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "prezzi" ? "subActive" : "" }`}
                 id="prezzi"
               >
                 <li>
@@ -560,9 +560,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "merchandising" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "merchandising" ? "subActive" : "" }`}
                 id="merchandising"
               >
                 <li>
@@ -601,9 +599,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "interessi" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "interessi" ? "subActive" : "" }`}
                 id="interessi"
               >
                 <li>
@@ -648,9 +644,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "pick" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "pick" ? "subActive" : "" }`}
                 id="pick"
               >
                 <li>
@@ -670,9 +664,7 @@ function NavBar() {
 
             <div
               id="scopri"
-              className={`navBar-subMenu-container ${
-                Tab === "scopri" ? "active" : ""
-              }`}
+              className={`navBar-subMenu-container ${Tab === "scopri" ? "active" : "" }`}
             >
               <ul className="navBar-subMenu-left">
                 <li>
@@ -771,9 +763,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "valori" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "valori" ? "subActive" : "" }`}
                 id="valori"
               >
                 <li>
@@ -788,9 +778,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "app" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "app" ? "subActive" : "" }`}
                 id="app"
               >
                 <li>
@@ -802,9 +790,7 @@ function NavBar() {
               </ul>
 
               <ul
-                className={`navBar-subMenu-right ${
-                  subTab === "riviste" ? "subActive" : ""
-                }`}
+                className={`navBar-subMenu-right ${subTab === "riviste" ? "subActive" : "" }`}
                 id="riviste"
               >
                 <li>
@@ -815,9 +801,7 @@ function NavBar() {
 
             <div
               id="aiuto"
-              className={`navBar-subMenu-container ${
-                Tab === "aiuto" ? "active" : ""
-              }`}
+              className={`navBar-subMenu-container ${Tab === "aiuto" ? "active" : "" }`}
             >
               <ul className="navBar-subMenu-left">
                 <li>
@@ -864,9 +848,7 @@ function NavBar() {
             </a>
           </div>
           <div
-            className={`navBarOverlay closeSideBar ${
-              overlay ? "active" : false
-            } `}
+            className={`navBarOverlay closeSideBar ${overlay ? "active" : false  } `}
             onClick={onClickSidebarClose}
           ></div>
 

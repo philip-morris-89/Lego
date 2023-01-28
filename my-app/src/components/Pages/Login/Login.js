@@ -35,11 +35,11 @@ function Login() {
       body: JSON.stringify({ email, password }),
     });
     const json = await response.json();
-    console.log(json);
     
     alert(json.error ? json.error : json.message);
 
     if(response.status === 200){
+      localStorage.setItem("user", JSON.stringify(json.user.email));
       navigate("/home")
     }
   };
