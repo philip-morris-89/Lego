@@ -472,4 +472,36 @@
     -webkit-animation: fadeIn 0.3s ease-in-out forwards;
             animation: fadeIn 0.3s ease-in-out forwards;
   }
+}
+.navBar-email {
+  position: relative;
+}
+.navBar-email .logoutFromNav {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1;
+  z-index: 99;
+}
+.navBar-email .logoutFromNav:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+.navBar-email:hover .logoutFromNav {
+  display: block;
 }/*# sourceMappingURL=navbar.css.map */
