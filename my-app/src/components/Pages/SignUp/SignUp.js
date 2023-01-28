@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom'
 import "./signup.css";
 import { Link } from "react-router-dom";
 import { Button, Checkbox, FormControlLabel, TextField } from "@mui/material";
 
 function SignUp() {
+
+  const navigate = useNavigate()
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [checked, setChecked] = useState(false);
@@ -43,6 +47,11 @@ function SignUp() {
     setEmail("");
     setPassword("");
     setChecked(false);
+
+    if(response.status === 200){
+      navigate("/login")
+    }
+
   };
 
   return (
