@@ -172,9 +172,9 @@ function NavBar() {
               <a
                 href="./"
                 className="navBar-account-vip"
-                onClick={(e) => {
+                onClick={ (e) => {
                   e.preventDefault();
-                  setOpenModal(true);
+                  if(!storedUser)setOpenModal(true);
                 }}
               >
                 <svg
@@ -217,7 +217,7 @@ function NavBar() {
                     ></path>
                   </g>
                 </svg>
-                {storedUser ? `Account ${storedUser}` : "Account"}
+                {storedUser ? `Account: ${storedUser}` : "Account"}
               </a>
               {storedUser && <a onClick={onLogout}>LogOut</a>}
             </li>
