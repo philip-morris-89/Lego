@@ -468,6 +468,9 @@ function NavBar() {
                 <li>
                   <a href="./">Ultima occasione per acquistarli</a>
                 </li>
+                <li>
+                  <Link to="/designsystemlibrary">Design System Library</Link>
+                </li>
               </ul>
 
               <ul
