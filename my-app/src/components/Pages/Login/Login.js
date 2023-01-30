@@ -101,7 +101,6 @@ function Login() {
                     }}
                   />
                 </div>
-
                 <div className="checkbox-wrapper">
                   <FormControlLabel
                     control={<Checkbox defaultChecked size="medium" />}
